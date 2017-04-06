@@ -111,7 +111,7 @@
             android:id="@+id/DeltaMain"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:onClick="Delta"
+            android:onClick="delta"
             app:srcCompat="@drawable/delta"
             android:layout_below="@+id/AlphaMain"
             android:layout_alignParentLeft="true"
@@ -123,9 +123,10 @@
             android:layout_height="wrap_content"
             android:onClick="alpha"
             app:srcCompat="@drawable/alpha"
-            android:layout_alignTop="@+id/YankeeMain"
-            android:layout_toLeftOf="@+id/Tangomain"
-            android:layout_toStartOf="@+id/Tangomain" />
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/textView2"
+            android:layout_toLeftOf="@+id/BravoMain"
+            android:layout_toStartOf="@+id/BravoMain" />
 
         <ImageButton
             android:id="@+id/LimaMain"
@@ -231,9 +232,9 @@
             android:layout_height="wrap_content"
             android:onClick="victor"
             app:srcCompat="@drawable/victor"
-            android:layout_alignParentBottom="true"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true" />
+            android:layout_below="@+id/SierraMain"
+            android:layout_toLeftOf="@+id/WhiskyMain"
+            android:layout_toStartOf="@+id/WhiskyMain" />
 
         <ImageButton
             android:id="@+id/UniformMain"
@@ -270,29 +271,10 @@
             android:layout_height="wrap_content"
             android:onClick="whisky"
             app:srcCompat="@drawable/whisky"
-            android:layout_alignParentBottom="true"
-            android:layout_toRightOf="@+id/SierraMain"
-            android:layout_toEndOf="@+id/SierraMain" />
+            android:layout_below="@+id/UniformMain"
+            android:layout_toLeftOf="@+id/UniformMain"
+            android:layout_toStartOf="@+id/UniformMain" />
 
-        <ImageButton
-            android:id="@+id/XrayMain"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentRight="true"
-            android:layout_below="@id/XrayMain"
-            android:onClick="xray"
-            app:srcCompat="@drawable/xray" />
-
-        <ImageButton
-            android:id="@+id/YankeeMain"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:onClick="yankee"
-            app:srcCompat="@drawable/yankee"
-            android:layout_below="@id/XrayMain"
-            android:layout_alignParentLeft="true"
-            />
 
         <ImageButton
             android:id="@+id/about"
@@ -306,6 +288,32 @@
             android:scaleType="fitCenter"
             app:srcCompat="@drawable/info" />
 
+        <ImageButton
+            android:id="@+id/imageButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/xray"
+            android:layout_below="@+id/UniformMain"
+            android:layout_toRightOf="@+id/WhiskyMain"
+            android:layout_toEndOf="@+id/WhiskyMain" />
+
+        <ImageButton
+            android:id="@+id/imageButton2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/VictorMain"
+            android:layout_alignStart="@+id/WhiskyMain"
+            android:layout_below="@+id/WhiskyMain"
+            app:srcCompat="@drawable/yankee" />
+
+        <ImageButton
+            android:id="@+id/imageButton3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/zulu"
+            android:layout_below="@+id/VictorMain"
+            android:layout_alignLeft="@+id/Tangomain"
+            android:layout_alignStart="@+id/Tangomain" />
 
 
     </RelativeLayout>
