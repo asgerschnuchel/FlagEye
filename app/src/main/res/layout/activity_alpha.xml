@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:scrollbars="none"
+    android:overScrollMode="never"
+
+
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/activity_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="0dp"
+        android:paddingLeft="0dp"
+        android:paddingRight="0dp"
+        android:paddingTop="0dp"
+        tools:context="com.example.asger.flageye.MainActivity">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Velkommen til Flageye V0.1 Alpha"
+            android:id="@+id/textView"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/foxtrot"
+            android:layout_below="@+id/CharlieAlpha"
+            android:layout_toRightOf="@+id/BravoAlpha"
+            android:layout_toEndOf="@+id/BravoAlpha"
+            android:id="@+id/FoxtrotAlpha" />
+
+        <TextView
+            android:text="    Vælg det flag som er nederst på standeren"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView"
+            android:layout_marginTop="44dp"
+            android:id="@+id/textView2"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:textColor="@android:color/background_dark"
+            android:textSize="18sp" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/india"
+            android:id="@+id/IndiaAlpha"
+            android:layout_below="@+id/FoxtrotAlpha"
+            android:layout_toRightOf="@+id/EchoAlpha"
+            android:layout_toEndOf="@+id/EchoAlpha" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/charlie"
+            android:id="@+id/CharlieAlpha"
+            android:layout_alignTop="@+id/BravoAlpha"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <ImageButton
+            android:id="@+id/BravoAlpha"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/AlphaAlpha"
+            android:layout_toLeftOf="@+id/CharlieAlpha"
+            android:layout_toStartOf="@+id/CharlieAlpha"
+            app:srcCompat="@drawable/bravo" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/echo"
+            android:id="@+id/EchoAlpha"
+            android:layout_below="@+id/CharlieAlpha"
+            android:layout_alignLeft="@+id/BravoAlpha"
+            android:layout_alignStart="@+id/BravoAlpha" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/hotel"
+            android:id="@+id/HotelAlpha"
+            android:layout_below="@+id/FoxtrotAlpha"
+            android:layout_alignLeft="@+id/EchoAlpha"
+            android:layout_alignStart="@+id/EchoAlpha" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/delta"
+            android:id="@+id/DeltaAlpha"
+            android:layout_below="@+id/AlphaAlpha"
+            android:layout_alignLeft="@+id/GolfAlpha"
+            android:layout_alignStart="@+id/GolfAlpha" />
+
+        <ImageButton
+            android:id="@+id/AlphaAlpha"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/DeltaAlpha"
+            android:layout_alignStart="@+id/DeltaAlpha"
+            android:layout_below="@+id/textView2"
+            android:layout_marginTop="53dp"
+            app:srcCompat="@drawable/alpha" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/lima"
+            android:id="@+id/LimaAlpha"
+            android:layout_below="@+id/IndiaAlpha"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/oscar"
+            android:id="@+id/OscarAlpha"
+            android:layout_below="@+id/LimaAlpha"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/november"
+            android:id="@+id/NovemberAlpha"
+            android:layout_below="@+id/LimaAlpha"
+            android:layout_alignLeft="@+id/KiloAlpha"
+            android:layout_alignStart="@+id/KiloAlpha" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/juliet"
+            android:id="@+id/JulietAlpha"
+            android:layout_below="@+id/HotelAlpha"
+            android:layout_alignLeft="@+id/GolfAlpha"
+            android:layout_alignStart="@+id/GolfAlpha" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/mike"
+            android:id="@+id/MikeAlpha"
+            android:layout_below="@+id/JulietAlpha"
+            android:layout_alignLeft="@+id/JulietAlpha"
+            android:layout_alignStart="@+id/JulietAlpha" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/golf"
+            android:id="@+id/GolfAlpha"
+            android:layout_below="@+id/EchoAlpha"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/sierra"
+            android:id="@+id/SierraAlpha"
+            android:layout_below="@+id/PapaAlpha"
+            />
+
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/kilo"
+            android:id="@+id/KiloAlpha"
+            android:layout_below="@+id/IndiaAlpha"
+            android:layout_alignLeft="@+id/HotelAlpha"
+            android:layout_alignStart="@+id/HotelAlpha" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/romeo"
+            android:id="@+id/RomeoAlpha"
+            android:layout_below="@+id/OscarAlpha"
+            android:layout_toRightOf="@+id/NovemberAlpha"
+            android:layout_toEndOf="@+id/NovemberAlpha" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/papa"
+            android:id="@+id/PapaAlpha"
+            android:layout_below="@+id/NovemberAlpha"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/victor"
+            android:layout_below="@+id/SierraAlpha"
+            android:id="@+id/VictorAlpha" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/uniform"
+            android:id="@+id/UniformAlpha"
+            android:layout_below="@+id/RomeoAlpha"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/quebec"
+            android:id="@+id/QuebeckAlpha"
+            android:layout_below="@+id/OscarAlpha"
+            android:layout_alignLeft="@+id/NovemberAlpha"
+            android:layout_alignStart="@+id/NovemberAlpha" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/tango"
+            android:id="@+id/TangoAlpha"
+            android:layout_below="@+id/PapaAlpha"
+            android:layout_alignLeft="@+id/QuebeckAlpha"
+            android:layout_alignStart="@+id/QuebeckAlpha" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/whisky"
+            android:id="@+id/WhiskeyAlpha"
+            android:layout_alignParentBottom="true"
+            android:layout_alignLeft="@+id/TangoAlpha"
+            android:layout_alignStart="@+id/TangoAlpha" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/xray"
+            android:layout_below="@+id/UniformAlpha"
+            android:layout_toRightOf="@+id/WhiskeyAlpha"
+            android:layout_toEndOf="@+id/WhiskeyAlpha"
+            android:id="@+id/XrayAlpha" />
+
+    </RelativeLayout>
+</ScrollView>

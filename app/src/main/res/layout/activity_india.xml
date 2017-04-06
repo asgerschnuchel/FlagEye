@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+
+    android:layout_marginRight="10dp"
+    android:layout_marginTop="10dp"
+    android:onClick="alpha"
+    android:overScrollMode="never"
+    android:scrollbars="none">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/activity_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="0dp"
+        android:paddingLeft="0dp"
+        android:paddingRight="0dp"
+        android:paddingTop="0dp"
+        tools:context="com.example.asger.flageye.IndiaActivity">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:text="Velkommen til Flageye V0.1 Alpha" />
+
+        <ImageButton
+            android:id="@+id/FoxtrotIndia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/CharlieIndia"
+            android:layout_toEndOf="@+id/BravoIndia"
+            android:layout_toRightOf="@+id/BravoIndia"
+            android:onClick="foxtrot"
+            app:srcCompat="@drawable/foxtrot" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/textView"
+            android:layout_marginTop="44dp"
+            android:text="    Vælg det flag som er øverst på standeren"
+            android:textColor="@android:color/background_dark"
+            android:textSize="18sp" />
+
+        <ImageButton
+            android:id="@+id/IndiaIndia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/india"
+            android:layout_below="@+id/FoxtrotIndia"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <ImageButton
+            android:id="@+id/CharlieIndia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/BravoIndia"
+            android:onClick="charlie"
+            app:srcCompat="@drawable/charlie" />
+
+        <ImageButton
+            android:id="@+id/BravoIndia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="bravo"
+            app:srcCompat="@drawable/bravo"
+            android:layout_alignTop="@+id/AlphaIndia"
+            android:layout_toLeftOf="@+id/CharlieIndia"
+            android:layout_toStartOf="@+id/CharlieIndia" />
+
+        <ImageButton
+            android:id="@+id/EchoIndia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/BravoIndia"
+            android:layout_alignStart="@+id/BravoIndia"
+            android:layout_below="@+id/CharlieIndia"
+            android:onClick="echo"
+            app:srcCompat="@drawable/echo" />
+
+        <ImageButton
+            android:id="@+id/HotelIndia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/EchoIndia"
+            android:layout_alignStart="@+id/EchoIndia"
+            android:layout_below="@+id/FoxtrotIndia"
+            android:onClick="hotel"
+            app:srcCompat="@drawable/hotel" />
+
+        <ImageButton
+            android:id="@+id/DeltaIndia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/AlphaIndia"
+            android:onClick="Delta"
+            app:srcCompat="@drawable/delta" />
+
+        <ImageButton
+            android:id="@+id/AlphaIndia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="47dp"
+            android:onClick="alpha"
+            app:srcCompat="@drawable/alpha"
+            android:layout_below="@+id/textView2"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <ImageButton
+            android:id="@+id/LimaIndia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/IndiaIndia"
+            app:srcCompat="@drawable/lima" />
+
+        <ImageButton
+            android:id="@+id/OscarIndia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/LimaIndia"
+            app:srcCompat="@drawable/oscar" />
+
+        <ImageButton
+            android:id="@+id/NovemberIndia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/KiloIndia"
+            android:layout_alignStart="@+id/KiloIndia"
+            android:layout_below="@+id/LimaIndia"
+            app:srcCompat="@drawable/november" />
+
+        <ImageButton
+            android:id="@+id/JulietIndia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/GolfIndia"
+            android:layout_alignStart="@+id/GolfIndia"
+            android:layout_below="@+id/HotelIndia"
+            app:srcCompat="@drawable/juliet" />
+
+        <ImageButton
+            android:id="@+id/MikeIndia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/JulietIndia"
+            android:layout_alignStart="@+id/JulietIndia"
+            android:layout_below="@+id/JulietIndia"
+            app:srcCompat="@drawable/mike" />
+
+        <ImageButton
+            android:id="@+id/GolfIndia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/DeltaIndia"
+            android:onClick="golf"
+            app:srcCompat="@drawable/golf" />
+
+        <ImageButton
+            android:id="@+id/SierraIndia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/PapaIndia"
+            app:srcCompat="@drawable/sierra" />
+
+
+        <ImageButton
+            android:id="@+id/KiloIndia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/HotelIndia"
+            android:layout_alignStart="@+id/HotelIndia"
+            android:layout_below="@+id/IndiaIndia"
+            app:srcCompat="@drawable/kilo" />
+
+        <ImageButton
+            android:id="@+id/RomeoIndia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/OscarIndia"
+            android:layout_toEndOf="@+id/NovemberIndia"
+            android:layout_toRightOf="@+id/NovemberIndia"
+            app:srcCompat="@drawable/romeo" />
+
+        <ImageButton
+            android:id="@+id/PapaIndia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/NovemberIndia"
+            app:srcCompat="@drawable/papa" />
+
+        <ImageButton
+            android:id="@+id/VictorIndia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/SierraIndia"
+            app:srcCompat="@drawable/victor" />
+
+        <ImageButton
+            android:id="@+id/UniformIndia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/RomeoIndia"
+            app:srcCompat="@drawable/uniform" />
+
+        <ImageButton
+            android:id="@+id/QuebeckIndia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/NovemberIndia"
+            android:layout_alignStart="@+id/NovemberIndia"
+            android:layout_below="@+id/OscarIndia"
+            app:srcCompat="@drawable/quebec" />
+
+        <ImageButton
+            android:id="@+id/Tangomain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/QuebeckIndia"
+            android:layout_alignStart="@+id/QuebeckIndia"
+            android:layout_below="@+id/PapaIndia"
+            app:srcCompat="@drawable/tango" />
+
+        <ImageButton
+            android:id="@+id/WhiskeyIndia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/Tangomain"
+            android:layout_alignParentBottom="true"
+            android:layout_alignStart="@+id/Tangomain"
+            app:srcCompat="@drawable/whisky" />
+
+        <ImageButton
+            android:id="@+id/XrayIndia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/UniformIndia"
+            android:layout_toEndOf="@+id/WhiskeyIndia"
+            android:layout_toRightOf="@+id/WhiskeyIndia"
+            app:srcCompat="@drawable/xray" />
+
+        <ImageButton
+            android:id="@+id/about"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:background="@android:color/background_light"
+            android:onClick="about"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/info" />
+
+    </RelativeLayout>
+</ScrollView>

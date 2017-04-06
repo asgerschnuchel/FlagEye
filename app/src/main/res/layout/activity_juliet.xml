@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+
+    android:layout_marginRight="10dp"
+    android:layout_marginTop="10dp"
+    android:onClick="alpha"
+    android:overScrollMode="never"
+    android:scrollbars="none">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/activity_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="0dp"
+        android:paddingLeft="0dp"
+        android:paddingRight="0dp"
+        android:paddingTop="0dp"
+        tools:context="com.example.asger.flageye.JulietActivity">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:text="Velkommen til Flageye V0.1 Alpha" />
+
+        <ImageButton
+            android:id="@+id/FoxtrotJuliet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/CharlieJuliet"
+            android:layout_toEndOf="@+id/BravoJuliet"
+            android:layout_toRightOf="@+id/BravoJuliet"
+            android:onClick="foxtrot"
+            app:srcCompat="@drawable/foxtrot" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/textView"
+            android:layout_marginTop="44dp"
+            android:text="    Vælg det flag som er øverst på standeren"
+            android:textColor="@android:color/background_dark"
+            android:textSize="18sp" />
+
+        <ImageButton
+            android:id="@+id/IndiaJuliet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/india"
+            android:layout_below="@+id/FoxtrotJuliet"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <ImageButton
+            android:id="@+id/CharlieJuliet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/BravoJuliet"
+            android:onClick="charlie"
+            app:srcCompat="@drawable/charlie" />
+
+        <ImageButton
+            android:id="@+id/BravoJuliet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="bravo"
+            app:srcCompat="@drawable/bravo"
+            android:layout_alignTop="@+id/AlphaJuliet"
+            android:layout_toLeftOf="@+id/CharlieJuliet"
+            android:layout_toStartOf="@+id/CharlieJuliet" />
+
+        <ImageButton
+            android:id="@+id/EchoJuliet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/BravoJuliet"
+            android:layout_alignStart="@+id/BravoJuliet"
+            android:layout_below="@+id/CharlieJuliet"
+            android:onClick="echo"
+            app:srcCompat="@drawable/echo" />
+
+        <ImageButton
+            android:id="@+id/HotelJuliet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/EchoJuliet"
+            android:layout_alignStart="@+id/EchoJuliet"
+            android:layout_below="@+id/FoxtrotJuliet"
+            android:onClick="hotel"
+            app:srcCompat="@drawable/hotel" />
+
+        <ImageButton
+            android:id="@+id/DeltaJuliet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/AlphaJuliet"
+            android:onClick="Delta"
+            app:srcCompat="@drawable/delta" />
+
+        <ImageButton
+            android:id="@+id/AlphaJuliet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="47dp"
+            android:onClick="alpha"
+            app:srcCompat="@drawable/alpha"
+            android:layout_below="@+id/textView2"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <ImageButton
+            android:id="@+id/LimaJuliet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/IndiaJuliet"
+            app:srcCompat="@drawable/lima" />
+
+        <ImageButton
+            android:id="@+id/OscarJuliet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/LimaJuliet"
+            app:srcCompat="@drawable/oscar" />
+
+        <ImageButton
+            android:id="@+id/NovemberJuliet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/KiloJuliet"
+            android:layout_alignStart="@+id/KiloJuliet"
+            android:layout_below="@+id/LimaJuliet"
+            app:srcCompat="@drawable/november" />
+
+        <ImageButton
+            android:id="@+id/JulietJuliet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/GolfJuliet"
+            android:layout_alignStart="@+id/GolfJuliet"
+            android:layout_below="@+id/HotelJuliet"
+            app:srcCompat="@drawable/juliet" />
+
+        <ImageButton
+            android:id="@+id/MikeJuliet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/JulietJuliet"
+            android:layout_alignStart="@+id/JulietJuliet"
+            android:layout_below="@+id/JulietJuliet"
+            app:srcCompat="@drawable/mike" />
+
+        <ImageButton
+            android:id="@+id/GolfJuliet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/DeltaJuliet"
+            android:onClick="golf"
+            app:srcCompat="@drawable/golf" />
+
+        <ImageButton
+            android:id="@+id/SierraJuliet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/PapaJuliet"
+            app:srcCompat="@drawable/sierra" />
+
+
+        <ImageButton
+            android:id="@+id/KiloJuliet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/HotelJuliet"
+            android:layout_alignStart="@+id/HotelJuliet"
+            android:layout_below="@+id/IndiaJuliet"
+            app:srcCompat="@drawable/kilo" />
+
+        <ImageButton
+            android:id="@+id/RomeoJuliet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/OscarJuliet"
+            android:layout_toEndOf="@+id/NovemberJuliet"
+            android:layout_toRightOf="@+id/NovemberJuliet"
+            app:srcCompat="@drawable/romeo" />
+
+        <ImageButton
+            android:id="@+id/PapaJuliet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/NovemberJuliet"
+            app:srcCompat="@drawable/papa" />
+
+        <ImageButton
+            android:id="@+id/VictorJuliet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/SierraJuliet"
+            app:srcCompat="@drawable/victor" />
+
+        <ImageButton
+            android:id="@+id/UniformJuliet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/RomeoJuliet"
+            app:srcCompat="@drawable/uniform" />
+
+        <ImageButton
+            android:id="@+id/QuebeckJuliet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/NovemberJuliet"
+            android:layout_alignStart="@+id/NovemberJuliet"
+            android:layout_below="@+id/OscarJuliet"
+            app:srcCompat="@drawable/quebec" />
+
+        <ImageButton
+            android:id="@+id/Tangomain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/QuebeckJuliet"
+            android:layout_alignStart="@+id/QuebeckJuliet"
+            android:layout_below="@+id/PapaJuliet"
+            app:srcCompat="@drawable/tango" />
+
+        <ImageButton
+            android:id="@+id/WhiskeyJuliet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/Tangomain"
+            android:layout_alignParentBottom="true"
+            android:layout_alignStart="@+id/Tangomain"
+            app:srcCompat="@drawable/whisky" />
+
+        <ImageButton
+            android:id="@+id/XrayJuliet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/UniformJuliet"
+            android:layout_toEndOf="@+id/WhiskeyJuliet"
+            android:layout_toRightOf="@+id/WhiskeyJuliet"
+            app:srcCompat="@drawable/xray" />
+
+        <ImageButton
+            android:id="@+id/about"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:background="@android:color/background_light"
+            android:onClick="about"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/info" />
+
+    </RelativeLayout>
+</ScrollView>

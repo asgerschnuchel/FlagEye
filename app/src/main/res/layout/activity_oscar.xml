@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+
+    android:layout_marginRight="10dp"
+    android:layout_marginTop="10dp"
+    android:onClick="alpha"
+    android:overScrollMode="never"
+    android:scrollbars="none">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/activity_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="0dp"
+        android:paddingLeft="0dp"
+        android:paddingRight="0dp"
+        android:paddingTop="0dp"
+        tools:context="com.example.asger.flageye.KiloActivity">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:text="Velkommen til Flageye V0.1 Alpha" />
+
+        <ImageButton
+            android:id="@+id/FoxtrotOscar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="foxtrot"
+            app:srcCompat="@drawable/foxtrot"
+            android:layout_below="@+id/CharlieOscar"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/textView"
+            android:layout_marginTop="44dp"
+            android:text="    Vælg det flag som er øverst på standeren"
+            android:textColor="@android:color/background_dark"
+            android:textSize="18sp" />
+
+        <ImageButton
+            android:id="@+id/IndiaOscar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/FoxtrotOscar"
+            android:onClick="india"
+            app:srcCompat="@drawable/india" />
+
+        <ImageButton
+            android:id="@+id/CharlieOscar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="charlie"
+            app:srcCompat="@drawable/charlie"
+            android:layout_alignTop="@+id/BravoOscar"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <ImageButton
+            android:id="@+id/BravoOscar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="bravo"
+            app:srcCompat="@drawable/bravo"
+            android:layout_alignTop="@+id/AlphaOscar"
+            android:layout_toLeftOf="@+id/CharlieOscar"
+            android:layout_toStartOf="@+id/CharlieOscar" />
+
+        <ImageButton
+            android:id="@+id/EchoOscar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="echo"
+            app:srcCompat="@drawable/echo"
+            android:layout_below="@+id/CharlieOscar"
+            android:layout_toLeftOf="@+id/FoxtrotOscar"
+            android:layout_toStartOf="@+id/FoxtrotOscar" />
+
+        <ImageButton
+            android:id="@+id/HotelOscar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="hotel"
+            app:srcCompat="@drawable/hotel"
+            android:layout_below="@+id/FoxtrotOscar"
+            android:layout_alignLeft="@+id/EchoOscar"
+            android:layout_alignStart="@+id/EchoOscar" />
+
+        <ImageButton
+            android:id="@+id/DeltaOscar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/AlphaOscar"
+            android:onClick="Delta"
+            app:srcCompat="@drawable/delta" />
+
+        <ImageButton
+            android:id="@+id/AlphaOscar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="47dp"
+            android:onClick="alpha"
+            app:srcCompat="@drawable/alpha"
+            android:layout_below="@+id/textView2"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <ImageButton
+            android:id="@+id/LimaOscar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/IndiaOscar"
+            android:onClick="lima"
+            app:srcCompat="@drawable/lima" />
+
+        <ImageButton
+            android:id="@+id/OscarOscar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/LimaOscar"
+            app:srcCompat="@drawable/oscar" />
+
+        <ImageButton
+            android:id="@+id/NovemberOscar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/november"
+            android:layout_below="@+id/LimaOscar"
+            android:onClick="november"
+            android:layout_toLeftOf="@+id/OscarOscar"
+            android:layout_toStartOf="@+id/OscarOscar" />
+
+        <ImageButton
+            android:id="@+id/JulietOscar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="juliet"
+            app:srcCompat="@drawable/juliet"
+            android:layout_below="@+id/GolfOscar"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <ImageButton
+            android:id="@+id/MikeOscar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/JulietOscar"
+            android:onClick="mike"
+            app:srcCompat="@drawable/mike" />
+
+        <ImageButton
+            android:id="@+id/GolfOscar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/DeltaOscar"
+            android:onClick="golf"
+            app:srcCompat="@drawable/golf" />
+
+        <ImageButton
+            android:id="@+id/SierraOscar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/PapaOscar"
+            app:srcCompat="@drawable/sierra" />
+
+
+        <ImageButton
+            android:id="@+id/KiloOscar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/HotelOscar"
+            android:layout_alignStart="@+id/HotelOscar"
+            android:layout_below="@+id/IndiaOscar"
+            android:onClick="kilo"
+            app:srcCompat="@drawable/kilo" />
+
+        <ImageButton
+            android:id="@+id/RomeoOscar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/romeo"
+            android:layout_below="@+id/OscarOscar"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <ImageButton
+            android:id="@+id/PapaOscar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/NovemberOscar"
+            app:srcCompat="@drawable/papa" />
+
+        <ImageButton
+            android:id="@+id/VictorOscar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/SierraOscar"
+            app:srcCompat="@drawable/victor" />
+
+        <ImageButton
+            android:id="@+id/UniformOscar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/uniform"
+            android:layout_below="@+id/RomeoOscar"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <ImageButton
+            android:id="@+id/QuebeckOscar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/NovemberOscar"
+            android:layout_alignStart="@+id/NovemberOscar"
+            android:layout_below="@+id/OscarOscar"
+            app:srcCompat="@drawable/quebec" />
+
+        <ImageButton
+            android:id="@+id/Tangomain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/QuebeckOscar"
+            android:layout_alignStart="@+id/QuebeckOscar"
+            android:layout_below="@+id/PapaOscar"
+            app:srcCompat="@drawable/tango" />
+
+        <ImageButton
+            android:id="@+id/WhiskeyOscar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/Tangomain"
+            android:layout_alignParentBottom="true"
+            android:layout_alignStart="@+id/Tangomain"
+            app:srcCompat="@drawable/whisky" />
+
+        <ImageButton
+            android:id="@+id/XrayOscar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/xray"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <ImageButton
+            android:id="@+id/about"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:background="@android:color/background_light"
+            android:onClick="about"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/info" />
+
+    </RelativeLayout>
+</ScrollView>

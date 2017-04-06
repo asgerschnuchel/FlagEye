@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+
+    android:layout_marginRight="10dp"
+    android:layout_marginTop="10dp"
+    android:onClick="alpha"
+    android:overScrollMode="never"
+    android:scrollbars="none">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/activity_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="0dp"
+        android:paddingLeft="0dp"
+        android:paddingRight="0dp"
+        android:paddingTop="0dp"
+        tools:context="com.example.asger.flageye.DeltaActivity">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:text="Velkommen til Flageye V0.1 Alpha" />
+
+        <ImageButton
+            android:id="@+id/FoxtrotDelta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/CharlieDelta"
+            android:layout_toEndOf="@+id/BravoDelta"
+            android:layout_toRightOf="@+id/BravoDelta"
+            app:srcCompat="@drawable/foxtrot" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/textView"
+            android:layout_marginTop="44dp"
+            android:text="    Vælg det flag som er øverst på standeren"
+            android:textColor="@android:color/background_dark"
+            android:textSize="18sp" />
+
+        <ImageButton
+            android:id="@+id/IndiaDelta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/FoxtrotDelta"
+            android:layout_toEndOf="@+id/EchoDelta"
+            android:layout_toRightOf="@+id/EchoDelta"
+            app:srcCompat="@drawable/india" />
+
+        <ImageButton
+            android:id="@+id/CharlieDelta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/BravoDelta"
+            app:srcCompat="@drawable/charlie" />
+
+        <ImageButton
+            android:id="@+id/BravoDelta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/AlphaDelta"
+            android:layout_toLeftOf="@+id/CharlieDelta"
+            android:layout_toStartOf="@+id/CharlieDelta"
+            android:onClick="bravo"
+            app:srcCompat="@drawable/bravo" />
+
+        <ImageButton
+            android:id="@+id/EchoDelta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/BravoDelta"
+            android:layout_alignStart="@+id/BravoDelta"
+            android:layout_below="@+id/CharlieDelta"
+            app:srcCompat="@drawable/echo" />
+
+        <ImageButton
+            android:id="@+id/HotelDelta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/EchoDelta"
+            android:layout_alignStart="@+id/EchoDelta"
+            android:layout_below="@+id/FoxtrotDelta"
+            app:srcCompat="@drawable/hotel" />
+
+        <ImageButton
+            android:id="@+id/DeltaDelta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/GolfDelta"
+            android:layout_alignStart="@+id/GolfDelta"
+            android:layout_below="@+id/AlphaDelta"
+            app:srcCompat="@drawable/delta" />
+
+        <ImageButton
+            android:id="@+id/AlphaDelta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/DeltaDelta"
+            android:layout_alignStart="@+id/DeltaDelta"
+            android:layout_below="@+id/textView2"
+            android:layout_marginTop="53dp"
+            android:onClick="first1"
+            app:srcCompat="@drawable/alpha" />
+
+        <ImageButton
+            android:id="@+id/LimaDelta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/IndiaDelta"
+            app:srcCompat="@drawable/lima" />
+
+        <ImageButton
+            android:id="@+id/OscarDelta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/LimaDelta"
+            app:srcCompat="@drawable/oscar" />
+
+        <ImageButton
+            android:id="@+id/NovemberDelta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/KiloDelta"
+            android:layout_alignStart="@+id/KiloDelta"
+            android:layout_below="@+id/LimaDelta"
+            app:srcCompat="@drawable/november" />
+
+        <ImageButton
+            android:id="@+id/JulietDelta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/GolfDelta"
+            android:layout_alignStart="@+id/GolfDelta"
+            android:layout_below="@+id/HotelDelta"
+            app:srcCompat="@drawable/juliet" />
+
+        <ImageButton
+            android:id="@+id/MikeDelta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/JulietDelta"
+            android:layout_alignStart="@+id/JulietDelta"
+            android:layout_below="@+id/JulietDelta"
+            app:srcCompat="@drawable/mike" />
+
+        <ImageButton
+            android:id="@+id/GolfDelta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/EchoDelta"
+            app:srcCompat="@drawable/golf" />
+
+        <ImageButton
+            android:id="@+id/SierraDelta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/PapaDelta"
+            app:srcCompat="@drawable/sierra" />
+
+
+        <ImageButton
+            android:id="@+id/KiloDelta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/HotelDelta"
+            android:layout_alignStart="@+id/HotelDelta"
+            android:layout_below="@+id/IndiaDelta"
+            app:srcCompat="@drawable/kilo" />
+
+        <ImageButton
+            android:id="@+id/RomeoDelta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/OscarDelta"
+            android:layout_toEndOf="@+id/NovemberDelta"
+            android:layout_toRightOf="@+id/NovemberDelta"
+            app:srcCompat="@drawable/romeo" />
+
+        <ImageButton
+            android:id="@+id/PapaDelta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/NovemberDelta"
+            app:srcCompat="@drawable/papa" />
+
+        <ImageButton
+            android:id="@+id/VictorDelta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/SierraDelta"
+            app:srcCompat="@drawable/victor" />
+
+        <ImageButton
+            android:id="@+id/UniformDelta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/RomeoDelta"
+            app:srcCompat="@drawable/uniform" />
+
+        <ImageButton
+            android:id="@+id/QuebeckDelta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/NovemberDelta"
+            android:layout_alignStart="@+id/NovemberDelta"
+            android:layout_below="@+id/OscarDelta"
+            app:srcCompat="@drawable/quebec" />
+
+        <ImageButton
+            android:id="@+id/Tangomain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/QuebeckDelta"
+            android:layout_alignStart="@+id/QuebeckDelta"
+            android:layout_below="@+id/PapaDelta"
+            app:srcCompat="@drawable/tango" />
+
+        <ImageButton
+            android:id="@+id/WhiskeyDelta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/Tangomain"
+            android:layout_alignParentBottom="true"
+            android:layout_alignStart="@+id/Tangomain"
+            app:srcCompat="@drawable/whisky" />
+
+        <ImageButton
+            android:id="@+id/XrayDelta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/UniformDelta"
+            android:layout_toEndOf="@+id/WhiskeyDelta"
+            android:layout_toRightOf="@+id/WhiskeyDelta"
+            app:srcCompat="@drawable/xray" />
+
+        <ImageButton
+            android:id="@+id/about"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:background="@android:color/background_light"
+            android:onClick="about"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/info" />
+
+    </RelativeLayout>
+</ScrollView>

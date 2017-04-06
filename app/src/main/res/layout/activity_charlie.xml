@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+
+    android:layout_marginRight="10dp"
+    android:layout_marginTop="10dp"
+    android:onClick="alpha"
+    android:overScrollMode="never"
+    android:scrollbars="none">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/activity_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="0dp"
+        android:paddingLeft="0dp"
+        android:paddingRight="0dp"
+        android:paddingTop="0dp"
+        tools:context="com.example.asger.flageye.CharlieActivity">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:text="Velkommen til Flageye V0.1 Alpha" />
+
+        <ImageButton
+            android:id="@+id/FoxtrotCharlie"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/CharlieCharlie"
+            android:layout_toEndOf="@+id/BravoCharlie"
+            android:layout_toRightOf="@+id/BravoCharlie"
+            app:srcCompat="@drawable/foxtrot" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/textView"
+            android:layout_marginTop="44dp"
+            android:text="    Vælg det flag som er øverst på standeren"
+            android:textColor="@android:color/background_dark"
+            android:textSize="18sp" />
+
+        <ImageButton
+            android:id="@+id/IndiaCharlie"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/FoxtrotCharlie"
+            android:layout_toEndOf="@+id/EchoCharlie"
+            android:layout_toRightOf="@+id/EchoCharlie"
+            app:srcCompat="@drawable/india" />
+
+        <ImageButton
+            android:id="@+id/CharlieCharlie"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/BravoCharlie"
+            app:srcCompat="@drawable/charlie" />
+
+        <ImageButton
+            android:id="@+id/BravoCharlie"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/AlphaCharlie"
+            android:layout_toLeftOf="@+id/CharlieCharlie"
+            android:layout_toStartOf="@+id/CharlieCharlie"
+            android:onClick="bravo"
+            app:srcCompat="@drawable/bravo" />
+
+        <ImageButton
+            android:id="@+id/EchoCharlie"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/BravoCharlie"
+            android:layout_alignStart="@+id/BravoCharlie"
+            android:layout_below="@+id/CharlieCharlie"
+            app:srcCompat="@drawable/echo" />
+
+        <ImageButton
+            android:id="@+id/HotelCharlie"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/EchoCharlie"
+            android:layout_alignStart="@+id/EchoCharlie"
+            android:layout_below="@+id/FoxtrotCharlie"
+            app:srcCompat="@drawable/hotel" />
+
+        <ImageButton
+            android:id="@+id/DeltaCharlie"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/GolfCharlie"
+            android:layout_alignStart="@+id/GolfCharlie"
+            android:layout_below="@+id/AlphaCharlie"
+            app:srcCompat="@drawable/delta" />
+
+        <ImageButton
+            android:id="@+id/AlphaCharlie"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/DeltaCharlie"
+            android:layout_alignStart="@+id/DeltaCharlie"
+            android:layout_below="@+id/textView2"
+            android:layout_marginTop="53dp"
+            android:onClick="first1"
+            app:srcCompat="@drawable/alpha" />
+
+        <ImageButton
+            android:id="@+id/LimaCharlie"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/IndiaCharlie"
+            app:srcCompat="@drawable/lima" />
+
+        <ImageButton
+            android:id="@+id/OscarCharlie"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/LimaCharlie"
+            app:srcCompat="@drawable/oscar" />
+
+        <ImageButton
+            android:id="@+id/NovemberCharlie"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/KiloCharlie"
+            android:layout_alignStart="@+id/KiloCharlie"
+            android:layout_below="@+id/LimaCharlie"
+            app:srcCompat="@drawable/november" />
+
+        <ImageButton
+            android:id="@+id/JulietCharlie"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/GolfCharlie"
+            android:layout_alignStart="@+id/GolfCharlie"
+            android:layout_below="@+id/HotelCharlie"
+            app:srcCompat="@drawable/juliet" />
+
+        <ImageButton
+            android:id="@+id/MikeCharlie"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/JulietCharlie"
+            android:layout_alignStart="@+id/JulietCharlie"
+            android:layout_below="@+id/JulietCharlie"
+            app:srcCompat="@drawable/mike" />
+
+        <ImageButton
+            android:id="@+id/GolfCharlie"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/EchoCharlie"
+            app:srcCompat="@drawable/golf" />
+
+        <ImageButton
+            android:id="@+id/SierraCharlie"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/PapaCharlie"
+            app:srcCompat="@drawable/sierra" />
+
+
+        <ImageButton
+            android:id="@+id/KiloCharlie"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/HotelCharlie"
+            android:layout_alignStart="@+id/HotelCharlie"
+            android:layout_below="@+id/IndiaCharlie"
+            app:srcCompat="@drawable/kilo" />
+
+        <ImageButton
+            android:id="@+id/RomeoCharlie"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/OscarCharlie"
+            android:layout_toEndOf="@+id/NovemberCharlie"
+            android:layout_toRightOf="@+id/NovemberCharlie"
+            app:srcCompat="@drawable/romeo" />
+
+        <ImageButton
+            android:id="@+id/PapaCharlie"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/NovemberCharlie"
+            app:srcCompat="@drawable/papa" />
+
+        <ImageButton
+            android:id="@+id/VictorCharlie"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/SierraCharlie"
+            app:srcCompat="@drawable/victor" />
+
+        <ImageButton
+            android:id="@+id/UniformCharlie"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/RomeoCharlie"
+            app:srcCompat="@drawable/uniform" />
+
+        <ImageButton
+            android:id="@+id/QuebeckCharlie"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/NovemberCharlie"
+            android:layout_alignStart="@+id/NovemberCharlie"
+            android:layout_below="@+id/OscarCharlie"
+            app:srcCompat="@drawable/quebec" />
+
+        <ImageButton
+            android:id="@+id/Tangomain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/QuebeckCharlie"
+            android:layout_alignStart="@+id/QuebeckCharlie"
+            android:layout_below="@+id/PapaCharlie"
+            app:srcCompat="@drawable/tango" />
+
+        <ImageButton
+            android:id="@+id/WhiskeyCharlie"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/Tangomain"
+            android:layout_alignParentBottom="true"
+            android:layout_alignStart="@+id/Tangomain"
+            app:srcCompat="@drawable/whisky" />
+
+        <ImageButton
+            android:id="@+id/XrayCharlie"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/UniformCharlie"
+            android:layout_toEndOf="@+id/WhiskeyCharlie"
+            android:layout_toRightOf="@+id/WhiskeyCharlie"
+            app:srcCompat="@drawable/xray" />
+
+        <ImageButton
+            android:id="@+id/about"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:background="@android:color/background_light"
+            android:onClick="about"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/info" />
+
+    </RelativeLayout>
+</ScrollView>
