@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="layout.unknown.Unknown">
+
+    <RelativeLayout
+        android:layout_width="413dp"
+        android:layout_height="606dp"
+        tools:layout_editor_absoluteX="-1dp"
+        tools:layout_editor_absoluteY="-2dp">
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="410dp"
+            android:layout_height="238dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/textView9"
+            android:layout_column="1"
+            android:layout_marginTop="14dp"
+            android:layout_row="15"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Der er ingen kendt betydning, af den kombination du har indtastet. Hvis du mener at dette er en fejl, så send en mail til: asgerschnuchel@gmail.com med beskrivelse af problemet"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="341dp" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="197dp"
+            android:layout_height="225dp"
+            android:layout_below="@+id/textView3"
+            android:layout_centerHorizontal="true"
+            android:layout_column="3"
+            android:layout_row="0"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/error"
+            tools:layout_editor_absoluteX="107dp"
+            tools:layout_editor_absoluteY="8dp" />
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageView"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="7dp"
+            android:text="Ups!"
+            android:textColor="@android:color/black"
+            android:textSize="30sp" />
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

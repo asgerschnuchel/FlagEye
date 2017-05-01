@@ -2,6 +2,7 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
+    android:layout_alignParentBottom="true"
     android:layout_height="match_parent"
 
 
@@ -21,7 +22,8 @@
         android:paddingLeft="0dp"
         android:paddingRight="0dp"
         android:paddingTop="0dp"
-        tools:context="com.example.asger.flageye.FoxtrotActivity">
+        android:gravity="center|bottom"
+        tools:context="com.example.asger.flageye.KiloActivity">
 
         <TextView
             android:id="@+id/textView"
@@ -35,10 +37,11 @@
             android:id="@+id/FoxtrotFoxtrot"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:onClick="foxtrot"
+            app:srcCompat="@drawable/foxtrot"
             android:layout_below="@+id/CharlieFoxtrot"
-            android:layout_toEndOf="@+id/BravoFoxtrot"
-            android:layout_toRightOf="@+id/BravoFoxtrot"
-            app:srcCompat="@drawable/foxtrot" />
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
 
         <TextView
             android:id="@+id/textView2"
@@ -58,69 +61,72 @@
             android:id="@+id/IndiaFoxtrot"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
             android:layout_below="@+id/FoxtrotFoxtrot"
-            android:layout_toEndOf="@+id/EchoFoxtrot"
-            android:layout_toRightOf="@+id/EchoFoxtrot"
+            android:onClick="india"
             app:srcCompat="@drawable/india" />
 
         <ImageButton
             android:id="@+id/CharlieFoxtrot"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentRight="true"
-            android:layout_alignTop="@+id/BravoFoxtrot"
             android:onClick="charlie"
-            app:srcCompat="@drawable/charlie" />
+            app:srcCompat="@drawable/charlie"
+            android:layout_alignTop="@+id/BravoFoxtrot"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
 
         <ImageButton
             android:id="@+id/BravoFoxtrot"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:onClick="bravo"
+            app:srcCompat="@drawable/bravo"
             android:layout_alignTop="@+id/AlphaFoxtrot"
             android:layout_toLeftOf="@+id/CharlieFoxtrot"
-            android:layout_toStartOf="@+id/CharlieFoxtrot"
-            android:onClick="bravo"
-            app:srcCompat="@drawable/bravo" />
+            android:layout_toStartOf="@+id/CharlieFoxtrot" />
 
         <ImageButton
             android:id="@+id/EchoFoxtrot"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignLeft="@+id/BravoFoxtrot"
-            android:layout_alignStart="@+id/BravoFoxtrot"
+            android:onClick="echo"
+            app:srcCompat="@drawable/echo"
             android:layout_below="@+id/CharlieFoxtrot"
-            app:srcCompat="@drawable/echo" />
+            android:layout_toLeftOf="@+id/FoxtrotFoxtrot"
+            android:layout_toStartOf="@+id/FoxtrotFoxtrot" />
 
         <ImageButton
             android:id="@+id/HotelFoxtrot"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignLeft="@+id/EchoFoxtrot"
-            android:layout_alignStart="@+id/EchoFoxtrot"
+            android:onClick="hotel"
+            app:srcCompat="@drawable/hotel"
             android:layout_below="@+id/FoxtrotFoxtrot"
-            app:srcCompat="@drawable/hotel" />
+            android:layout_alignLeft="@+id/EchoFoxtrot"
+            android:layout_alignStart="@+id/EchoFoxtrot" />
 
         <ImageButton
             android:id="@+id/DeltaFoxtrot"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignLeft="@+id/GolfFoxtrot"
-            android:layout_alignStart="@+id/GolfFoxtrot"
+            android:onClick="delta"
+            app:srcCompat="@drawable/delta"
             android:layout_below="@+id/AlphaFoxtrot"
-            android:onClick="echo"
-            app:srcCompat="@drawable/delta" />
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
 
         <ImageButton
             android:id="@+id/AlphaFoxtrot"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignLeft="@+id/DeltaFoxtrot"
-            android:layout_alignStart="@+id/DeltaFoxtrot"
+            android:onClick="alpha"
+            app:srcCompat="@drawable/alpha"
+            android:layout_marginTop="10dp"
             android:layout_below="@+id/textView2"
-            android:layout_marginTop="53dp"
-            android:onClick="first1"
-            app:srcCompat="@drawable/alpha" />
+            android:layout_toLeftOf="@+id/BravoFoxtrot"
+            android:layout_toStartOf="@+id/BravoFoxtrot" />
 
         <ImageButton
             android:id="@+id/LimaFoxtrot"
@@ -129,6 +135,7 @@
             android:layout_alignParentEnd="true"
             android:layout_alignParentRight="true"
             android:layout_below="@+id/IndiaFoxtrot"
+            android:onClick="lima"
             app:srcCompat="@drawable/lima" />
 
         <ImageButton
@@ -137,6 +144,7 @@
             android:layout_height="wrap_content"
             android:layout_alignParentEnd="true"
             android:layout_alignParentRight="true"
+            android:onClick="oscar"
             android:layout_below="@+id/LimaFoxtrot"
             app:srcCompat="@drawable/oscar" />
 
@@ -144,43 +152,48 @@
             android:id="@+id/NovemberFoxtrot"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignLeft="@+id/KiloFoxtrot"
-            android:layout_alignStart="@+id/KiloFoxtrot"
+            app:srcCompat="@drawable/november"
+            android:onClick="november"
             android:layout_below="@+id/LimaFoxtrot"
-            app:srcCompat="@drawable/november" />
+            android:layout_alignLeft="@+id/KiloFoxtrot"
+            android:layout_alignStart="@+id/KiloFoxtrot" />
 
         <ImageButton
             android:id="@+id/JulietFoxtrot"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignLeft="@+id/GolfFoxtrot"
-            android:layout_alignStart="@+id/GolfFoxtrot"
-            android:layout_below="@+id/HotelFoxtrot"
-            app:srcCompat="@drawable/juliet" />
+            android:onClick="juliet"
+            app:srcCompat="@drawable/juliet"
+            android:layout_below="@+id/GolfFoxtrot"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
 
         <ImageButton
             android:id="@+id/MikeFoxtrot"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignLeft="@+id/JulietFoxtrot"
-            android:layout_alignStart="@+id/JulietFoxtrot"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
             android:layout_below="@+id/JulietFoxtrot"
+            android:onClick="mike"
             app:srcCompat="@drawable/mike" />
 
         <ImageButton
             android:id="@+id/GolfFoxtrot"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:onClick="golf"
+            app:srcCompat="@drawable/golf"
+            android:layout_below="@+id/DeltaFoxtrot"
             android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true"
-            android:layout_below="@+id/EchoFoxtrot"
-            app:srcCompat="@drawable/golf" />
+            android:layout_alignParentStart="true" />
 
         <ImageButton
             android:id="@+id/SierraFoxtrot"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/PapaFoxtrot"
+            android:onClick="sierra"
             app:srcCompat="@drawable/sierra" />
 
 
@@ -191,16 +204,18 @@
             android:layout_alignLeft="@+id/HotelFoxtrot"
             android:layout_alignStart="@+id/HotelFoxtrot"
             android:layout_below="@+id/IndiaFoxtrot"
+            android:onClick="kilo"
             app:srcCompat="@drawable/kilo" />
 
         <ImageButton
             android:id="@+id/RomeoFoxtrot"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            app:srcCompat="@drawable/romeo"
+            android:onClick="romeo"
             android:layout_below="@+id/OscarFoxtrot"
-            android:layout_toEndOf="@+id/NovemberFoxtrot"
-            android:layout_toRightOf="@+id/NovemberFoxtrot"
-            app:srcCompat="@drawable/romeo" />
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
 
         <ImageButton
             android:id="@+id/PapaFoxtrot"
@@ -215,8 +230,11 @@
             android:id="@+id/VictorFoxtrot"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:onClick="victor"
+            app:srcCompat="@drawable/victor"
             android:layout_below="@+id/SierraFoxtrot"
-            app:srcCompat="@drawable/victor" />
+            android:layout_toLeftOf="@+id/WhiskyFoxtrot"
+            android:layout_toStartOf="@+id/WhiskyFoxtrot" />
 
         <ImageButton
             android:id="@+id/UniformFoxtrot"
@@ -225,6 +243,7 @@
             android:layout_alignParentEnd="true"
             android:layout_alignParentRight="true"
             android:layout_below="@+id/RomeoFoxtrot"
+            android:onClick="uniform"
             app:srcCompat="@drawable/uniform" />
 
         <ImageButton
@@ -233,6 +252,7 @@
             android:layout_height="wrap_content"
             android:layout_alignLeft="@+id/NovemberFoxtrot"
             android:layout_alignStart="@+id/NovemberFoxtrot"
+            android:onClick="quebeck"
             android:layout_below="@+id/OscarFoxtrot"
             app:srcCompat="@drawable/quebec" />
 
@@ -240,28 +260,21 @@
             android:id="@+id/Tangomain"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignLeft="@+id/QuebeckFoxtrot"
-            android:layout_alignStart="@+id/QuebeckFoxtrot"
-            android:layout_below="@+id/PapaFoxtrot"
+            android:layout_below="@+id/QuebeckFoxtrot"
+            android:layout_centerHorizontal="true"
+            android:onClick="tango"
             app:srcCompat="@drawable/tango" />
 
         <ImageButton
-            android:id="@+id/WhiskeyFoxtrot"
+            android:id="@+id/WhiskyFoxtrot"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignLeft="@+id/Tangomain"
-            android:layout_alignParentBottom="true"
-            android:layout_alignStart="@+id/Tangomain"
-            app:srcCompat="@drawable/whisky" />
-
-        <ImageButton
-            android:id="@+id/XrayFoxtrot"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:onClick="whisky"
+            app:srcCompat="@drawable/whisky"
             android:layout_below="@+id/UniformFoxtrot"
-            android:layout_toEndOf="@+id/WhiskeyFoxtrot"
-            android:layout_toRightOf="@+id/WhiskeyFoxtrot"
-            app:srcCompat="@drawable/xray" />
+            android:layout_toLeftOf="@+id/UniformFoxtrot"
+            android:layout_toStartOf="@+id/UniformFoxtrot" />
+
 
         <ImageButton
             android:id="@+id/about"
@@ -274,6 +287,34 @@
             android:onClick="about"
             android:scaleType="fitCenter"
             app:srcCompat="@drawable/info" />
+
+        <ImageButton
+            android:id="@+id/XrayFoxtrot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/xray"
+            android:layout_below="@+id/UniformFoxtrot"
+            android:layout_toRightOf="@+id/WhiskyFoxtrot"
+            android:layout_toEndOf="@+id/WhiskyFoxtrot" />
+
+        <ImageButton
+            android:id="@+id/YankeeFoxtrot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/VictorFoxtrot"
+            android:layout_alignStart="@+id/WhiskyFoxtrot"
+            android:layout_below="@+id/WhiskyFoxtrot"
+            app:srcCompat="@drawable/yankee" />
+
+        <ImageButton
+            android:id="@+id/ZuluFoxtrot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/zulu"
+            android:layout_below="@+id/VictorFoxtrot"
+            android:layout_alignLeft="@+id/Tangomain"
+            android:layout_alignStart="@+id/Tangomain" />
+
 
     </RelativeLayout>
 </ScrollView>

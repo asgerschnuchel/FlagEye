@@ -1,320 +1,367 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+android:layout_width="match_parent"
+android:layout_alignParentBottom="true"
+android:layout_height="match_parent"
+
+android:layout_marginTop="10dp"
+android:onClick="alpha"
+android:overScrollMode="never"
+android:scrollbars="none">
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
     android:layout_width="match_parent"
-    android:layout_alignParentBottom="true"
     android:layout_height="match_parent"
+    android:paddingBottom="20dp"
+    android:paddingLeft="0dp"
+    android:paddingRight="0dp"
+    android:paddingTop="0dp"
+    android:gravity="center|bottom"
+    tools:context="com.example.asger.flageye.KiloActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="Velkommen til Flageye V0.1 Alpha" />
+
+    <ImageButton
+        android:id="@+id/FoxtrotMain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/EchoMain"
+        android:layout_marginRight="10dp"
+        android:background="@android:color/background_light"
+        android:onClick="foxtrot"
+        app:srcCompat="@drawable/foxtrot" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/textView"
+        android:layout_marginTop="44dp"
+        android:layout_marginBottom="25dp"
+        android:text="    Vælg det flag som er øverst på standeren"
+        android:textColor="@android:color/background_dark"
+        android:textSize="18sp" />
+
+    <ImageButton
+        android:id="@+id/IndiaMain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/HotelMain"
+        android:layout_marginRight="10dp"
+        android:background="@android:color/background_light"
+        android:onClick="india"
+        app:srcCompat="@drawable/india" />
+
+    <ImageButton
+        android:id="@+id/CharlieMain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/BravoMain"
+        android:layout_marginRight="10dp"
+        android:background="@android:color/background_light"
+        android:onClick="charlie"
+        app:srcCompat="@drawable/charlie" />
+
+    <ImageButton
+        android:id="@+id/BravoMain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/background_light"
+        android:layout_centerHorizontal="true"
+        android:onClick="bravo"
+        app:srcCompat="@drawable/bravo"
+        android:layout_below="@+id/textView2"
+        android:layout_alignLeft="@+id/NovemberMain"
+        android:layout_alignStart="@+id/NovemberMain" />
+
+    <ImageButton
+        android:id="@+id/EchoMain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/background_light"
+        android:onClick="echo"
+        app:srcCompat="@drawable/echo"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/GolfMain"
+        android:layout_alignLeft="@+id/BravoMain"
+        android:layout_alignStart="@+id/BravoMain" />
+
+    <ImageButton
+        android:id="@+id/HotelMain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/background_light"
+        android:onClick="hotel"
+        app:srcCompat="@drawable/hotel"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/JulietMain"
+        android:layout_alignLeft="@+id/EchoMain"
+        android:layout_alignStart="@+id/EchoMain" />
+
+    <ImageButton
+        android:id="@+id/DeltaMain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/background_light"
+        android:onClick="delta"
+        app:srcCompat="@drawable/delta"
+        android:layout_marginTop="12dp"
+        android:layout_below="@+id/AlphaMain"
+        android:layout_alignLeft="@+id/AlphaMain"
+        android:layout_alignStart="@+id/AlphaMain" />
+
+    <ImageButton
+        android:id="@+id/AlphaMain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/background_light"
+        android:onClick="alpha"
+        app:srcCompat="@drawable/alpha"
+        android:layout_below="@+id/textView2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp" />
+
+    <ImageButton
+        android:id="@+id/LimaMain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/KiloMain"
+        android:layout_marginRight="10dp"
+        android:background="@android:color/background_light"
+        android:onClick="lima"
+        app:srcCompat="@drawable/lima" />
+
+    <ImageButton
+        android:id="@+id/OscarMain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/NovemberMain"
+        android:layout_marginRight="10dp"
+        android:background="@android:color/background_light"
+        android:onClick="oscar"
+        app:srcCompat="@drawable/oscar" />
+
+    <ImageButton
+        android:id="@+id/NovemberMain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/background_light"
+        android:onClick="november"
+        app:srcCompat="@drawable/november"
+        android:layout_alignTop="@+id/MikeMain"
+        android:layout_centerHorizontal="true" />
+
+    <ImageButton
+        android:id="@+id/JulietMain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/background_light"
+        android:onClick="juliet"
+        app:srcCompat="@drawable/juliet"
+        android:layout_marginTop="12dp"
+        android:layout_below="@+id/GolfMain"
+        android:layout_alignLeft="@+id/GolfMain"
+        android:layout_alignStart="@+id/GolfMain" />
+
+    <ImageButton
+        android:id="@+id/MikeMain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/background_light"
+        android:onClick="mike"
+        app:srcCompat="@drawable/mike"
+        android:layout_below="@+id/JulietMain"
+        android:layout_alignLeft="@+id/JulietMain"
+        android:layout_alignStart="@+id/JulietMain"
+        android:layout_marginTop="9dp" />
+
+    <ImageButton
+        android:id="@+id/GolfMain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/background_light"
+        android:onClick="golf"
+        app:srcCompat="@drawable/golf"
+        android:layout_marginTop="8dp"
+        android:layout_below="@+id/DeltaMain"
+        android:layout_alignLeft="@+id/DeltaMain"
+        android:layout_alignStart="@+id/DeltaMain" />
+
+    <ImageButton
+        android:id="@+id/SierraMain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/background_light"
+        android:onClick="sierra"
+        app:srcCompat="@drawable/sierra"
+        android:layout_below="@+id/PapaMain"
+        android:layout_alignLeft="@+id/PapaMain"
+        android:layout_alignStart="@+id/PapaMain"
+        android:layout_marginTop="10dp" />
 
 
-    android:layout_marginRight="10dp"
-    android:layout_marginTop="10dp"
-    android:onClick="alpha"
-    android:overScrollMode="never"
-    android:scrollbars="none">
+    <ImageButton
+        android:id="@+id/KiloMain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/background_light"
+        android:onClick="kilo"
+        app:srcCompat="@drawable/kilo"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/MikeMain"
+        android:layout_alignLeft="@+id/HotelMain"
+        android:layout_alignStart="@+id/HotelMain" />
 
-    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
-        xmlns:tools="http://schemas.android.com/tools"
-        android:id="@+id/activity_main"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:paddingBottom="0dp"
-        android:paddingLeft="0dp"
-        android:paddingRight="0dp"
-        android:paddingTop="0dp"
-        android:gravity="center|bottom"
-        tools:context="com.example.asger.flageye.KiloActivity">
+    <ImageButton
+        android:id="@+id/RomeoMain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/QuebeckMain"
+        android:layout_marginRight="10dp"
+        android:background="@android:color/background_light"
+        android:onClick="romeo"
+        app:srcCompat="@drawable/romeo" />
 
-        <TextView
-            android:id="@+id/textView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentTop="true"
-            android:layout_centerHorizontal="true"
-            android:text="Velkommen til Flageye V0.1 Alpha" />
+    <ImageButton
+        android:id="@+id/PapaMain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/background_light"
+        app:srcCompat="@drawable/papa"
+        android:layout_below="@+id/MikeMain"
+        android:layout_alignLeft="@+id/MikeMain"
+        android:layout_alignStart="@+id/MikeMain"
+        android:layout_marginTop="11dp" />
 
-        <ImageButton
-            android:id="@+id/FoxtrotMain"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:onClick="foxtrot"
-            app:srcCompat="@drawable/foxtrot"
-            android:layout_below="@+id/CharlieMain"
-            android:layout_alignParentRight="true"
-            android:layout_alignParentEnd="true" />
+    <ImageButton
+        android:id="@+id/VictorMain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/background_light"
+        android:onClick="victor"
+        app:srcCompat="@drawable/victor"
+        android:layout_marginTop="9dp"
+        android:layout_below="@+id/SierraMain"
+        android:layout_alignParentLeft="false"
+        android:layout_alignLeft="@+id/SierraMain"
+        android:layout_alignStart="@+id/SierraMain" />
 
-        <TextView
-            android:id="@+id/textView2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentRight="true"
-            android:layout_alignParentStart="true"
-            android:layout_below="@+id/textView"
-            android:layout_marginTop="44dp"
-            android:text="    Vælg det flag som er øverst på standeren"
-            android:textColor="@android:color/background_dark"
-            android:textSize="18sp" />
+    <ImageButton
+        android:id="@+id/UniformMain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/Tangomain"
+        android:layout_marginRight="10dp"
+        android:background="@android:color/background_light"
+        android:onClick="uniform"
+        app:srcCompat="@drawable/uniform" />
 
-        <ImageButton
-            android:id="@+id/IndiaMain"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentRight="true"
-            android:layout_below="@+id/FoxtrotMain"
-            android:onClick="india"
-            app:srcCompat="@drawable/india" />
+    <ImageButton
+        android:id="@+id/QuebeckMain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/background_light"
+        android:onClick="quebeck"
+        app:srcCompat="@drawable/quebec"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/SierraMain"
+        android:layout_alignLeft="@+id/NovemberMain"
+        android:layout_alignStart="@+id/NovemberMain" />
 
-        <ImageButton
-            android:id="@+id/CharlieMain"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:onClick="charlie"
-            app:srcCompat="@drawable/charlie"
-            android:layout_alignTop="@+id/BravoMain"
-            android:layout_alignParentRight="true"
-            android:layout_alignParentEnd="true" />
+    <ImageButton
+        android:id="@+id/Tangomain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/background_light"
+        android:onClick="tango"
+        app:srcCompat="@drawable/tango"
+        android:layout_above="@+id/VictorMain"
+        android:layout_centerHorizontal="true" />
 
-        <ImageButton
-            android:id="@+id/BravoMain"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:onClick="bravo"
-            app:srcCompat="@drawable/bravo"
-            android:layout_alignTop="@+id/AlphaMain"
-            android:layout_toLeftOf="@+id/CharlieMain"
-            android:layout_toStartOf="@+id/CharlieMain" />
-
-        <ImageButton
-            android:id="@+id/EchoMain"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:onClick="echo"
-            app:srcCompat="@drawable/echo"
-            android:layout_below="@+id/CharlieMain"
-            android:layout_toLeftOf="@+id/FoxtrotMain"
-            android:layout_toStartOf="@+id/FoxtrotMain" />
-
-        <ImageButton
-            android:id="@+id/HotelMain"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:onClick="hotel"
-            app:srcCompat="@drawable/hotel"
-            android:layout_below="@+id/FoxtrotMain"
-            android:layout_alignLeft="@+id/EchoMain"
-            android:layout_alignStart="@+id/EchoMain" />
-
-        <ImageButton
-            android:id="@+id/DeltaMain"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:onClick="delta"
-            app:srcCompat="@drawable/delta"
-            android:layout_below="@+id/AlphaMain"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true" />
-
-        <ImageButton
-            android:id="@+id/AlphaMain"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:onClick="alpha"
-            app:srcCompat="@drawable/alpha"
-            android:layout_marginTop="10dp"
-            android:layout_below="@+id/textView2"
-            android:layout_toLeftOf="@+id/BravoMain"
-            android:layout_toStartOf="@+id/BravoMain" />
-
-        <ImageButton
-            android:id="@+id/LimaMain"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentRight="true"
-            android:layout_below="@+id/IndiaMain"
-            android:onClick="lima"
-            app:srcCompat="@drawable/lima" />
-
-        <ImageButton
-            android:id="@+id/OscarMain"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentRight="true"
-            android:onClick="oscar"
-            android:layout_below="@+id/LimaMain"
-            app:srcCompat="@drawable/oscar" />
-
-        <ImageButton
-            android:id="@+id/NovemberMain"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            app:srcCompat="@drawable/november"
-            android:onClick="november"
-            android:layout_below="@+id/LimaMain"
-            android:layout_alignLeft="@+id/KiloMain"
-            android:layout_alignStart="@+id/KiloMain" />
-
-        <ImageButton
-            android:id="@+id/JulietMain"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:onClick="juliet"
-            app:srcCompat="@drawable/juliet"
-            android:layout_below="@+id/GolfMain"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true" />
-
-        <ImageButton
-            android:id="@+id/MikeMain"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true"
-            android:layout_below="@+id/JulietMain"
-            android:onClick="mike"
-            app:srcCompat="@drawable/mike" />
-
-        <ImageButton
-            android:id="@+id/GolfMain"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:onClick="golf"
-            app:srcCompat="@drawable/golf"
-            android:layout_below="@+id/DeltaMain"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true" />
-
-        <ImageButton
-            android:id="@+id/SierraMain"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/PapaMain"
-            android:onClick="sierra"
-            app:srcCompat="@drawable/sierra" />
+    <ImageButton
+        android:id="@+id/WhiskyMain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/background_light"
+        android:onClick="whisky"
+        app:srcCompat="@drawable/whisky"
+        android:layout_alignTop="@+id/VictorMain"
+        android:layout_centerHorizontal="true" />
 
 
-        <ImageButton
-            android:id="@+id/KiloMain"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignLeft="@+id/HotelMain"
-            android:layout_alignStart="@+id/HotelMain"
-            android:layout_below="@+id/IndiaMain"
-            android:onClick="kilo"
-            app:srcCompat="@drawable/kilo" />
+    <ImageButton
+        android:id="@+id/about"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="10dp"
+        android:background="@android:color/background_light"
+        android:onClick="about"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/info" />
 
-        <ImageButton
-            android:id="@+id/RomeoMain"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            app:srcCompat="@drawable/romeo"
-            android:onClick="romeo"
-            android:layout_below="@+id/OscarMain"
-            android:layout_alignParentRight="true"
-            android:layout_alignParentEnd="true" />
+    <ImageButton
+        android:id="@+id/XrayMain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/WhiskyMain"
+        android:layout_marginRight="10dp"
+        android:background="@android:color/background_light"
+        app:srcCompat="@drawable/xray" />
 
-        <ImageButton
-            android:id="@+id/PapaMain"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true"
-            android:layout_below="@+id/NovemberMain"
-            app:srcCompat="@drawable/papa" />
+    <ImageButton
+        android:id="@+id/YankeeMain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@android:color/background_light"
+        app:srcCompat="@drawable/yankee"
+        android:layout_below="@+id/VictorMain"
+        android:layout_alignLeft="@+id/VictorMain"
+        android:layout_alignStart="@+id/VictorMain" />
 
-        <ImageButton
-            android:id="@+id/VictorMain"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:onClick="victor"
-            app:srcCompat="@drawable/victor"
-            android:layout_below="@+id/SierraMain"
-            android:layout_toLeftOf="@+id/WhiskyMain"
-            android:layout_toStartOf="@+id/WhiskyMain" />
-
-        <ImageButton
-            android:id="@+id/UniformMain"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentRight="true"
-            android:layout_below="@+id/RomeoMain"
-            android:onClick="uniform"
-            app:srcCompat="@drawable/uniform" />
-
-        <ImageButton
-            android:id="@+id/QuebeckMain"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignLeft="@+id/NovemberMain"
-            android:layout_alignStart="@+id/NovemberMain"
-            android:onClick="quebeck"
-            android:layout_below="@+id/OscarMain"
-            app:srcCompat="@drawable/quebec" />
-
-        <ImageButton
-            android:id="@+id/Tangomain"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/QuebeckMain"
-            android:layout_centerHorizontal="true"
-            android:onClick="tango"
-            app:srcCompat="@drawable/tango" />
-
-        <ImageButton
-            android:id="@+id/WhiskyMain"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:onClick="whisky"
-            app:srcCompat="@drawable/whisky"
-            android:layout_below="@+id/UniformMain"
-            android:layout_toLeftOf="@+id/UniformMain"
-            android:layout_toStartOf="@+id/UniformMain" />
+    <ImageButton
+        android:id="@+id/ZuluMain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/background_light"
+        app:srcCompat="@drawable/zulu"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/WhiskyMain"
+        android:layout_alignStart="@+id/WhiskyMain" />
 
 
-        <ImageButton
-            android:id="@+id/about"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentRight="true"
-            android:layout_alignParentTop="true"
-            android:background="@android:color/background_light"
-            android:onClick="about"
-            android:scaleType="fitCenter"
-            app:srcCompat="@drawable/info" />
-
-        <ImageButton
-            android:id="@+id/imageButton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            app:srcCompat="@drawable/xray"
-            android:layout_below="@+id/UniformMain"
-            android:layout_toRightOf="@+id/WhiskyMain"
-            android:layout_toEndOf="@+id/WhiskyMain" />
-
-        <ImageButton
-            android:id="@+id/imageButton2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignLeft="@+id/VictorMain"
-            android:layout_alignStart="@+id/WhiskyMain"
-            android:layout_below="@+id/WhiskyMain"
-            app:srcCompat="@drawable/yankee" />
-
-        <ImageButton
-            android:id="@+id/imageButton3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            app:srcCompat="@drawable/zulu"
-            android:layout_below="@+id/VictorMain"
-            android:layout_alignLeft="@+id/Tangomain"
-            android:layout_alignStart="@+id/Tangomain" />
-
-
-    </RelativeLayout>
+</RelativeLayout>
 </ScrollView>

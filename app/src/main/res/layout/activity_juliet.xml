@@ -2,6 +2,7 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
+    android:layout_alignParentBottom="true"
     android:layout_height="match_parent"
 
 
@@ -21,7 +22,8 @@
         android:paddingLeft="0dp"
         android:paddingRight="0dp"
         android:paddingTop="0dp"
-        tools:context="com.example.asger.flageye.JulietActivity">
+        android:gravity="center|bottom"
+        tools:context="com.example.asger.flageye.KiloActivity">
 
         <TextView
             android:id="@+id/textView"
@@ -35,11 +37,11 @@
             android:id="@+id/FoxtrotJuliet"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/CharlieJuliet"
-            android:layout_toEndOf="@+id/BravoJuliet"
-            android:layout_toRightOf="@+id/BravoJuliet"
             android:onClick="foxtrot"
-            app:srcCompat="@drawable/foxtrot" />
+            app:srcCompat="@drawable/foxtrot"
+            android:layout_below="@+id/CharlieJuliet"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
 
         <TextView
             android:id="@+id/textView2"
@@ -59,20 +61,21 @@
             android:id="@+id/IndiaJuliet"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            app:srcCompat="@drawable/india"
-            android:layout_below="@+id/FoxtrotJuliet"
+            android:layout_alignParentEnd="true"
             android:layout_alignParentRight="true"
-            android:layout_alignParentEnd="true" />
+            android:layout_below="@+id/FoxtrotJuliet"
+            android:onClick="india"
+            app:srcCompat="@drawable/india" />
 
         <ImageButton
             android:id="@+id/CharlieJuliet"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentRight="true"
-            android:layout_alignTop="@+id/BravoJuliet"
             android:onClick="charlie"
-            app:srcCompat="@drawable/charlie" />
+            app:srcCompat="@drawable/charlie"
+            android:layout_alignTop="@+id/BravoJuliet"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
 
         <ImageButton
             android:id="@+id/BravoJuliet"
@@ -88,42 +91,42 @@
             android:id="@+id/EchoJuliet"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignLeft="@+id/BravoJuliet"
-            android:layout_alignStart="@+id/BravoJuliet"
-            android:layout_below="@+id/CharlieJuliet"
             android:onClick="echo"
-            app:srcCompat="@drawable/echo" />
+            app:srcCompat="@drawable/echo"
+            android:layout_below="@+id/CharlieJuliet"
+            android:layout_toLeftOf="@+id/FoxtrotJuliet"
+            android:layout_toStartOf="@+id/FoxtrotJuliet" />
 
         <ImageButton
             android:id="@+id/HotelJuliet"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignLeft="@+id/EchoJuliet"
-            android:layout_alignStart="@+id/EchoJuliet"
-            android:layout_below="@+id/FoxtrotJuliet"
             android:onClick="hotel"
-            app:srcCompat="@drawable/hotel" />
+            app:srcCompat="@drawable/hotel"
+            android:layout_below="@+id/FoxtrotJuliet"
+            android:layout_alignLeft="@+id/EchoJuliet"
+            android:layout_alignStart="@+id/EchoJuliet" />
 
         <ImageButton
             android:id="@+id/DeltaJuliet"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true"
+            android:onClick="delta"
+            app:srcCompat="@drawable/delta"
             android:layout_below="@+id/AlphaJuliet"
-            android:onClick="Delta"
-            app:srcCompat="@drawable/delta" />
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
 
         <ImageButton
             android:id="@+id/AlphaJuliet"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="47dp"
             android:onClick="alpha"
             app:srcCompat="@drawable/alpha"
+            android:layout_marginTop="10dp"
             android:layout_below="@+id/textView2"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true" />
+            android:layout_toLeftOf="@+id/BravoJuliet"
+            android:layout_toStartOf="@+id/BravoJuliet" />
 
         <ImageButton
             android:id="@+id/LimaJuliet"
@@ -132,6 +135,7 @@
             android:layout_alignParentEnd="true"
             android:layout_alignParentRight="true"
             android:layout_below="@+id/IndiaJuliet"
+            android:onClick="lima"
             app:srcCompat="@drawable/lima" />
 
         <ImageButton
@@ -140,6 +144,7 @@
             android:layout_height="wrap_content"
             android:layout_alignParentEnd="true"
             android:layout_alignParentRight="true"
+            android:onClick="oscar"
             android:layout_below="@+id/LimaJuliet"
             app:srcCompat="@drawable/oscar" />
 
@@ -147,44 +152,48 @@
             android:id="@+id/NovemberJuliet"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignLeft="@+id/KiloJuliet"
-            android:layout_alignStart="@+id/KiloJuliet"
+            app:srcCompat="@drawable/november"
+            android:onClick="november"
             android:layout_below="@+id/LimaJuliet"
-            app:srcCompat="@drawable/november" />
+            android:layout_alignLeft="@+id/KiloJuliet"
+            android:layout_alignStart="@+id/KiloJuliet" />
 
         <ImageButton
             android:id="@+id/JulietJuliet"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignLeft="@+id/GolfJuliet"
-            android:layout_alignStart="@+id/GolfJuliet"
-            android:layout_below="@+id/HotelJuliet"
-            app:srcCompat="@drawable/juliet" />
+            android:onClick="juliet"
+            app:srcCompat="@drawable/juliet"
+            android:layout_below="@+id/GolfJuliet"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
 
         <ImageButton
             android:id="@+id/MikeJuliet"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignLeft="@+id/JulietJuliet"
-            android:layout_alignStart="@+id/JulietJuliet"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
             android:layout_below="@+id/JulietJuliet"
+            android:onClick="mike"
             app:srcCompat="@drawable/mike" />
 
         <ImageButton
             android:id="@+id/GolfJuliet"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true"
-            android:layout_below="@+id/DeltaJuliet"
             android:onClick="golf"
-            app:srcCompat="@drawable/golf" />
+            app:srcCompat="@drawable/golf"
+            android:layout_below="@+id/DeltaJuliet"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
 
         <ImageButton
             android:id="@+id/SierraJuliet"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/PapaJuliet"
+            android:onClick="sierra"
             app:srcCompat="@drawable/sierra" />
 
 
@@ -195,16 +204,18 @@
             android:layout_alignLeft="@+id/HotelJuliet"
             android:layout_alignStart="@+id/HotelJuliet"
             android:layout_below="@+id/IndiaJuliet"
+            android:onClick="kilo"
             app:srcCompat="@drawable/kilo" />
 
         <ImageButton
             android:id="@+id/RomeoJuliet"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            app:srcCompat="@drawable/romeo"
+            android:onClick="romeo"
             android:layout_below="@+id/OscarJuliet"
-            android:layout_toEndOf="@+id/NovemberJuliet"
-            android:layout_toRightOf="@+id/NovemberJuliet"
-            app:srcCompat="@drawable/romeo" />
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
 
         <ImageButton
             android:id="@+id/PapaJuliet"
@@ -219,8 +230,11 @@
             android:id="@+id/VictorJuliet"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:onClick="victor"
+            app:srcCompat="@drawable/victor"
             android:layout_below="@+id/SierraJuliet"
-            app:srcCompat="@drawable/victor" />
+            android:layout_toLeftOf="@+id/WhiskyJuliet"
+            android:layout_toStartOf="@+id/WhiskyJuliet" />
 
         <ImageButton
             android:id="@+id/UniformJuliet"
@@ -229,6 +243,7 @@
             android:layout_alignParentEnd="true"
             android:layout_alignParentRight="true"
             android:layout_below="@+id/RomeoJuliet"
+            android:onClick="uniform"
             app:srcCompat="@drawable/uniform" />
 
         <ImageButton
@@ -237,6 +252,7 @@
             android:layout_height="wrap_content"
             android:layout_alignLeft="@+id/NovemberJuliet"
             android:layout_alignStart="@+id/NovemberJuliet"
+            android:onClick="quebeck"
             android:layout_below="@+id/OscarJuliet"
             app:srcCompat="@drawable/quebec" />
 
@@ -244,28 +260,21 @@
             android:id="@+id/Tangomain"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignLeft="@+id/QuebeckJuliet"
-            android:layout_alignStart="@+id/QuebeckJuliet"
-            android:layout_below="@+id/PapaJuliet"
+            android:layout_below="@+id/QuebeckJuliet"
+            android:layout_centerHorizontal="true"
+            android:onClick="tango"
             app:srcCompat="@drawable/tango" />
 
         <ImageButton
-            android:id="@+id/WhiskeyJuliet"
+            android:id="@+id/WhiskyJuliet"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignLeft="@+id/Tangomain"
-            android:layout_alignParentBottom="true"
-            android:layout_alignStart="@+id/Tangomain"
-            app:srcCompat="@drawable/whisky" />
-
-        <ImageButton
-            android:id="@+id/XrayJuliet"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:onClick="whisky"
+            app:srcCompat="@drawable/whisky"
             android:layout_below="@+id/UniformJuliet"
-            android:layout_toEndOf="@+id/WhiskeyJuliet"
-            android:layout_toRightOf="@+id/WhiskeyJuliet"
-            app:srcCompat="@drawable/xray" />
+            android:layout_toLeftOf="@+id/UniformJuliet"
+            android:layout_toStartOf="@+id/UniformJuliet" />
+
 
         <ImageButton
             android:id="@+id/about"
@@ -278,6 +287,34 @@
             android:onClick="about"
             android:scaleType="fitCenter"
             app:srcCompat="@drawable/info" />
+
+        <ImageButton
+            android:id="@+id/XrayJuliet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/xray"
+            android:layout_below="@+id/UniformJuliet"
+            android:layout_toRightOf="@+id/WhiskyJuliet"
+            android:layout_toEndOf="@+id/WhiskyJuliet" />
+
+        <ImageButton
+            android:id="@+id/YankeeJuliet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/VictorJuliet"
+            android:layout_alignStart="@+id/WhiskyJuliet"
+            android:layout_below="@+id/WhiskyJuliet"
+            app:srcCompat="@drawable/yankee" />
+
+        <ImageButton
+            android:id="@+id/ZuluJuliet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/zulu"
+            android:layout_below="@+id/VictorJuliet"
+            android:layout_alignLeft="@+id/Tangomain"
+            android:layout_alignStart="@+id/Tangomain" />
+
 
     </RelativeLayout>
 </ScrollView>

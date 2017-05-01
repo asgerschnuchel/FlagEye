@@ -2,6 +2,7 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
+    android:layout_alignParentBottom="true"
     android:layout_height="match_parent"
 
 
@@ -21,6 +22,7 @@
         android:paddingLeft="0dp"
         android:paddingRight="0dp"
         android:paddingTop="0dp"
+        android:gravity="center|bottom"
         tools:context="com.example.asger.flageye.KiloActivity">
 
         <TextView
@@ -109,22 +111,22 @@
             android:id="@+id/DeltaSierra"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true"
+            android:onClick="delta"
+            app:srcCompat="@drawable/delta"
             android:layout_below="@+id/AlphaSierra"
-            android:onClick="Delta"
-            app:srcCompat="@drawable/delta" />
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
 
         <ImageButton
             android:id="@+id/AlphaSierra"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="47dp"
             android:onClick="alpha"
             app:srcCompat="@drawable/alpha"
+            android:layout_marginTop="10dp"
             android:layout_below="@+id/textView2"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true" />
+            android:layout_toLeftOf="@+id/BravoSierra"
+            android:layout_toStartOf="@+id/BravoSierra" />
 
         <ImageButton
             android:id="@+id/LimaSierra"
@@ -151,10 +153,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:srcCompat="@drawable/november"
-            android:layout_below="@+id/LimaSierra"
             android:onClick="november"
-            android:layout_toLeftOf="@+id/OscarSierra"
-            android:layout_toStartOf="@+id/OscarSierra" />
+            android:layout_below="@+id/LimaSierra"
+            android:layout_alignLeft="@+id/KiloSierra"
+            android:layout_alignStart="@+id/KiloSierra" />
 
         <ImageButton
             android:id="@+id/JulietSierra"
@@ -180,17 +182,18 @@
             android:id="@+id/GolfSierra"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true"
-            android:layout_below="@+id/DeltaSierra"
             android:onClick="golf"
-            app:srcCompat="@drawable/golf" />
+            app:srcCompat="@drawable/golf"
+            android:layout_below="@+id/DeltaSierra"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
 
         <ImageButton
             android:id="@+id/SierraSierra"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/PapaSierra"
+            android:onClick="sierra"
             app:srcCompat="@drawable/sierra" />
 
 
@@ -227,17 +230,21 @@
             android:id="@+id/VictorSierra"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:onClick="victor"
+            app:srcCompat="@drawable/victor"
             android:layout_below="@+id/SierraSierra"
-            app:srcCompat="@drawable/victor" />
+            android:layout_toLeftOf="@+id/WhiskySierra"
+            android:layout_toStartOf="@+id/WhiskySierra" />
 
         <ImageButton
             android:id="@+id/UniformSierra"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            app:srcCompat="@drawable/uniform"
-            android:layout_below="@+id/RomeoSierra"
+            android:layout_alignParentEnd="true"
             android:layout_alignParentRight="true"
-            android:layout_alignParentEnd="true" />
+            android:layout_below="@+id/RomeoSierra"
+            android:onClick="uniform"
+            app:srcCompat="@drawable/uniform" />
 
         <ImageButton
             android:id="@+id/QuebeckSierra"
@@ -253,28 +260,21 @@
             android:id="@+id/Tangomain"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignLeft="@+id/QuebeckSierra"
-            android:layout_alignStart="@+id/QuebeckSierra"
-            android:layout_below="@+id/PapaSierra"
+            android:layout_below="@+id/QuebeckSierra"
+            android:layout_centerHorizontal="true"
+            android:onClick="tango"
             app:srcCompat="@drawable/tango" />
 
         <ImageButton
-            android:id="@+id/WhiskeySierra"
+            android:id="@+id/WhiskySierra"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignLeft="@+id/Tangomain"
-            android:layout_alignParentBottom="true"
-            android:layout_alignStart="@+id/Tangomain"
-            app:srcCompat="@drawable/whisky" />
+            android:onClick="whisky"
+            app:srcCompat="@drawable/whisky"
+            android:layout_below="@+id/UniformSierra"
+            android:layout_toLeftOf="@+id/UniformSierra"
+            android:layout_toStartOf="@+id/UniformSierra" />
 
-        <ImageButton
-            android:id="@+id/XraySierra"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            app:srcCompat="@drawable/xray"
-            android:layout_alignParentBottom="true"
-            android:layout_alignParentRight="true"
-            android:layout_alignParentEnd="true" />
 
         <ImageButton
             android:id="@+id/about"
@@ -287,6 +287,34 @@
             android:onClick="about"
             android:scaleType="fitCenter"
             app:srcCompat="@drawable/info" />
+
+        <ImageButton
+            android:id="@+id/XraySierra"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/xray"
+            android:layout_below="@+id/UniformSierra"
+            android:layout_toRightOf="@+id/WhiskySierra"
+            android:layout_toEndOf="@+id/WhiskySierra" />
+
+        <ImageButton
+            android:id="@+id/YankeeSierra"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/VictorSierra"
+            android:layout_alignStart="@+id/WhiskySierra"
+            android:layout_below="@+id/WhiskySierra"
+            app:srcCompat="@drawable/yankee" />
+
+        <ImageButton
+            android:id="@+id/ZuluSierra"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/zulu"
+            android:layout_below="@+id/VictorSierra"
+            android:layout_alignLeft="@+id/Tangomain"
+            android:layout_alignStart="@+id/Tangomain" />
+
 
     </RelativeLayout>
 </ScrollView>

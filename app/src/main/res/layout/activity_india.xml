@@ -2,6 +2,7 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
+    android:layout_alignParentBottom="true"
     android:layout_height="match_parent"
 
 
@@ -21,7 +22,8 @@
         android:paddingLeft="0dp"
         android:paddingRight="0dp"
         android:paddingTop="0dp"
-        tools:context="com.example.asger.flageye.IndiaActivity">
+        android:gravity="center|bottom"
+        tools:context="com.example.asger.flageye.KiloActivity">
 
         <TextView
             android:id="@+id/textView"
@@ -35,11 +37,11 @@
             android:id="@+id/FoxtrotIndia"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/CharlieIndia"
-            android:layout_toEndOf="@+id/BravoIndia"
-            android:layout_toRightOf="@+id/BravoIndia"
             android:onClick="foxtrot"
-            app:srcCompat="@drawable/foxtrot" />
+            app:srcCompat="@drawable/foxtrot"
+            android:layout_below="@+id/CharlieIndia"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
 
         <TextView
             android:id="@+id/textView2"
@@ -59,20 +61,21 @@
             android:id="@+id/IndiaIndia"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            app:srcCompat="@drawable/india"
-            android:layout_below="@+id/FoxtrotIndia"
+            android:layout_alignParentEnd="true"
             android:layout_alignParentRight="true"
-            android:layout_alignParentEnd="true" />
+            android:layout_below="@+id/FoxtrotIndia"
+            android:onClick="india"
+            app:srcCompat="@drawable/india" />
 
         <ImageButton
             android:id="@+id/CharlieIndia"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentRight="true"
-            android:layout_alignTop="@+id/BravoIndia"
             android:onClick="charlie"
-            app:srcCompat="@drawable/charlie" />
+            app:srcCompat="@drawable/charlie"
+            android:layout_alignTop="@+id/BravoIndia"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
 
         <ImageButton
             android:id="@+id/BravoIndia"
@@ -88,42 +91,42 @@
             android:id="@+id/EchoIndia"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignLeft="@+id/BravoIndia"
-            android:layout_alignStart="@+id/BravoIndia"
-            android:layout_below="@+id/CharlieIndia"
             android:onClick="echo"
-            app:srcCompat="@drawable/echo" />
+            app:srcCompat="@drawable/echo"
+            android:layout_below="@+id/CharlieIndia"
+            android:layout_toLeftOf="@+id/FoxtrotIndia"
+            android:layout_toStartOf="@+id/FoxtrotIndia" />
 
         <ImageButton
             android:id="@+id/HotelIndia"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignLeft="@+id/EchoIndia"
-            android:layout_alignStart="@+id/EchoIndia"
-            android:layout_below="@+id/FoxtrotIndia"
             android:onClick="hotel"
-            app:srcCompat="@drawable/hotel" />
+            app:srcCompat="@drawable/hotel"
+            android:layout_below="@+id/FoxtrotIndia"
+            android:layout_alignLeft="@+id/EchoIndia"
+            android:layout_alignStart="@+id/EchoIndia" />
 
         <ImageButton
             android:id="@+id/DeltaIndia"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true"
+            android:onClick="delta"
+            app:srcCompat="@drawable/delta"
             android:layout_below="@+id/AlphaIndia"
-            android:onClick="Delta"
-            app:srcCompat="@drawable/delta" />
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
 
         <ImageButton
             android:id="@+id/AlphaIndia"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="47dp"
             android:onClick="alpha"
             app:srcCompat="@drawable/alpha"
+            android:layout_marginTop="10dp"
             android:layout_below="@+id/textView2"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true" />
+            android:layout_toLeftOf="@+id/BravoIndia"
+            android:layout_toStartOf="@+id/BravoIndia" />
 
         <ImageButton
             android:id="@+id/LimaIndia"
@@ -132,6 +135,7 @@
             android:layout_alignParentEnd="true"
             android:layout_alignParentRight="true"
             android:layout_below="@+id/IndiaIndia"
+            android:onClick="lima"
             app:srcCompat="@drawable/lima" />
 
         <ImageButton
@@ -140,6 +144,7 @@
             android:layout_height="wrap_content"
             android:layout_alignParentEnd="true"
             android:layout_alignParentRight="true"
+            android:onClick="oscar"
             android:layout_below="@+id/LimaIndia"
             app:srcCompat="@drawable/oscar" />
 
@@ -147,44 +152,48 @@
             android:id="@+id/NovemberIndia"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignLeft="@+id/KiloIndia"
-            android:layout_alignStart="@+id/KiloIndia"
+            app:srcCompat="@drawable/november"
+            android:onClick="november"
             android:layout_below="@+id/LimaIndia"
-            app:srcCompat="@drawable/november" />
+            android:layout_alignLeft="@+id/KiloIndia"
+            android:layout_alignStart="@+id/KiloIndia" />
 
         <ImageButton
             android:id="@+id/JulietIndia"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignLeft="@+id/GolfIndia"
-            android:layout_alignStart="@+id/GolfIndia"
-            android:layout_below="@+id/HotelIndia"
-            app:srcCompat="@drawable/juliet" />
+            android:onClick="juliet"
+            app:srcCompat="@drawable/juliet"
+            android:layout_below="@+id/GolfIndia"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
 
         <ImageButton
             android:id="@+id/MikeIndia"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignLeft="@+id/JulietIndia"
-            android:layout_alignStart="@+id/JulietIndia"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
             android:layout_below="@+id/JulietIndia"
+            android:onClick="mike"
             app:srcCompat="@drawable/mike" />
 
         <ImageButton
             android:id="@+id/GolfIndia"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true"
-            android:layout_below="@+id/DeltaIndia"
             android:onClick="golf"
-            app:srcCompat="@drawable/golf" />
+            app:srcCompat="@drawable/golf"
+            android:layout_below="@+id/DeltaIndia"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
 
         <ImageButton
             android:id="@+id/SierraIndia"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/PapaIndia"
+            android:onClick="sierra"
             app:srcCompat="@drawable/sierra" />
 
 
@@ -195,16 +204,18 @@
             android:layout_alignLeft="@+id/HotelIndia"
             android:layout_alignStart="@+id/HotelIndia"
             android:layout_below="@+id/IndiaIndia"
+            android:onClick="kilo"
             app:srcCompat="@drawable/kilo" />
 
         <ImageButton
             android:id="@+id/RomeoIndia"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            app:srcCompat="@drawable/romeo"
+            android:onClick="romeo"
             android:layout_below="@+id/OscarIndia"
-            android:layout_toEndOf="@+id/NovemberIndia"
-            android:layout_toRightOf="@+id/NovemberIndia"
-            app:srcCompat="@drawable/romeo" />
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
 
         <ImageButton
             android:id="@+id/PapaIndia"
@@ -219,8 +230,11 @@
             android:id="@+id/VictorIndia"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:onClick="victor"
+            app:srcCompat="@drawable/victor"
             android:layout_below="@+id/SierraIndia"
-            app:srcCompat="@drawable/victor" />
+            android:layout_toLeftOf="@+id/WhiskyIndia"
+            android:layout_toStartOf="@+id/WhiskyIndia" />
 
         <ImageButton
             android:id="@+id/UniformIndia"
@@ -229,6 +243,7 @@
             android:layout_alignParentEnd="true"
             android:layout_alignParentRight="true"
             android:layout_below="@+id/RomeoIndia"
+            android:onClick="uniform"
             app:srcCompat="@drawable/uniform" />
 
         <ImageButton
@@ -237,6 +252,7 @@
             android:layout_height="wrap_content"
             android:layout_alignLeft="@+id/NovemberIndia"
             android:layout_alignStart="@+id/NovemberIndia"
+            android:onClick="quebeck"
             android:layout_below="@+id/OscarIndia"
             app:srcCompat="@drawable/quebec" />
 
@@ -244,28 +260,21 @@
             android:id="@+id/Tangomain"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignLeft="@+id/QuebeckIndia"
-            android:layout_alignStart="@+id/QuebeckIndia"
-            android:layout_below="@+id/PapaIndia"
+            android:layout_below="@+id/QuebeckIndia"
+            android:layout_centerHorizontal="true"
+            android:onClick="tango"
             app:srcCompat="@drawable/tango" />
 
         <ImageButton
-            android:id="@+id/WhiskeyIndia"
+            android:id="@+id/WhiskyIndia"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignLeft="@+id/Tangomain"
-            android:layout_alignParentBottom="true"
-            android:layout_alignStart="@+id/Tangomain"
-            app:srcCompat="@drawable/whisky" />
-
-        <ImageButton
-            android:id="@+id/XrayIndia"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:onClick="whisky"
+            app:srcCompat="@drawable/whisky"
             android:layout_below="@+id/UniformIndia"
-            android:layout_toEndOf="@+id/WhiskeyIndia"
-            android:layout_toRightOf="@+id/WhiskeyIndia"
-            app:srcCompat="@drawable/xray" />
+            android:layout_toLeftOf="@+id/UniformIndia"
+            android:layout_toStartOf="@+id/UniformIndia" />
+
 
         <ImageButton
             android:id="@+id/about"
@@ -278,6 +287,34 @@
             android:onClick="about"
             android:scaleType="fitCenter"
             app:srcCompat="@drawable/info" />
+
+        <ImageButton
+            android:id="@+id/XrayIndia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/xray"
+            android:layout_below="@+id/UniformIndia"
+            android:layout_toRightOf="@+id/WhiskyIndia"
+            android:layout_toEndOf="@+id/WhiskyIndia" />
+
+        <ImageButton
+            android:id="@+id/YankeeIndia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/VictorIndia"
+            android:layout_alignStart="@+id/WhiskyIndia"
+            android:layout_below="@+id/WhiskyIndia"
+            app:srcCompat="@drawable/yankee" />
+
+        <ImageButton
+            android:id="@+id/ZuluIndia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/zulu"
+            android:layout_below="@+id/VictorIndia"
+            android:layout_alignLeft="@+id/Tangomain"
+            android:layout_alignStart="@+id/Tangomain" />
+
 
     </RelativeLayout>
 </ScrollView>

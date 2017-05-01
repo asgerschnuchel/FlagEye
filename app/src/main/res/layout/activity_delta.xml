@@ -2,6 +2,7 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
+    android:layout_alignParentBottom="true"
     android:layout_height="match_parent"
 
 
@@ -21,7 +22,8 @@
         android:paddingLeft="0dp"
         android:paddingRight="0dp"
         android:paddingTop="0dp"
-        tools:context="com.example.asger.flageye.DeltaActivity">
+        android:gravity="center|bottom"
+        tools:context="com.example.asger.flageye.KiloActivity">
 
         <TextView
             android:id="@+id/textView"
@@ -35,10 +37,11 @@
             android:id="@+id/FoxtrotDelta"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:onClick="foxtrot"
+            app:srcCompat="@drawable/foxtrot"
             android:layout_below="@+id/CharlieDelta"
-            android:layout_toEndOf="@+id/BravoDelta"
-            android:layout_toRightOf="@+id/BravoDelta"
-            app:srcCompat="@drawable/foxtrot" />
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
 
         <TextView
             android:id="@+id/textView2"
@@ -58,67 +61,72 @@
             android:id="@+id/IndiaDelta"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
             android:layout_below="@+id/FoxtrotDelta"
-            android:layout_toEndOf="@+id/EchoDelta"
-            android:layout_toRightOf="@+id/EchoDelta"
+            android:onClick="india"
             app:srcCompat="@drawable/india" />
 
         <ImageButton
             android:id="@+id/CharlieDelta"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentRight="true"
+            android:onClick="charlie"
+            app:srcCompat="@drawable/charlie"
             android:layout_alignTop="@+id/BravoDelta"
-            app:srcCompat="@drawable/charlie" />
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
 
         <ImageButton
             android:id="@+id/BravoDelta"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:onClick="bravo"
+            app:srcCompat="@drawable/bravo"
             android:layout_alignTop="@+id/AlphaDelta"
             android:layout_toLeftOf="@+id/CharlieDelta"
-            android:layout_toStartOf="@+id/CharlieDelta"
-            android:onClick="bravo"
-            app:srcCompat="@drawable/bravo" />
+            android:layout_toStartOf="@+id/CharlieDelta" />
 
         <ImageButton
             android:id="@+id/EchoDelta"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignLeft="@+id/BravoDelta"
-            android:layout_alignStart="@+id/BravoDelta"
+            android:onClick="echo"
+            app:srcCompat="@drawable/echo"
             android:layout_below="@+id/CharlieDelta"
-            app:srcCompat="@drawable/echo" />
+            android:layout_toLeftOf="@+id/FoxtrotDelta"
+            android:layout_toStartOf="@+id/FoxtrotDelta" />
 
         <ImageButton
             android:id="@+id/HotelDelta"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignLeft="@+id/EchoDelta"
-            android:layout_alignStart="@+id/EchoDelta"
+            android:onClick="hotel"
+            app:srcCompat="@drawable/hotel"
             android:layout_below="@+id/FoxtrotDelta"
-            app:srcCompat="@drawable/hotel" />
+            android:layout_alignLeft="@+id/EchoDelta"
+            android:layout_alignStart="@+id/EchoDelta" />
 
         <ImageButton
             android:id="@+id/DeltaDelta"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignLeft="@+id/GolfDelta"
-            android:layout_alignStart="@+id/GolfDelta"
+            android:onClick="delta"
+            app:srcCompat="@drawable/delta"
             android:layout_below="@+id/AlphaDelta"
-            app:srcCompat="@drawable/delta" />
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
 
         <ImageButton
             android:id="@+id/AlphaDelta"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignLeft="@+id/DeltaDelta"
-            android:layout_alignStart="@+id/DeltaDelta"
+            android:onClick="alpha"
+            app:srcCompat="@drawable/alpha"
+            android:layout_marginTop="10dp"
             android:layout_below="@+id/textView2"
-            android:layout_marginTop="53dp"
-            android:onClick="first1"
-            app:srcCompat="@drawable/alpha" />
+            android:layout_toLeftOf="@+id/BravoDelta"
+            android:layout_toStartOf="@+id/BravoDelta" />
 
         <ImageButton
             android:id="@+id/LimaDelta"
@@ -127,6 +135,7 @@
             android:layout_alignParentEnd="true"
             android:layout_alignParentRight="true"
             android:layout_below="@+id/IndiaDelta"
+            android:onClick="lima"
             app:srcCompat="@drawable/lima" />
 
         <ImageButton
@@ -135,6 +144,7 @@
             android:layout_height="wrap_content"
             android:layout_alignParentEnd="true"
             android:layout_alignParentRight="true"
+            android:onClick="oscar"
             android:layout_below="@+id/LimaDelta"
             app:srcCompat="@drawable/oscar" />
 
@@ -142,43 +152,48 @@
             android:id="@+id/NovemberDelta"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignLeft="@+id/KiloDelta"
-            android:layout_alignStart="@+id/KiloDelta"
+            app:srcCompat="@drawable/november"
+            android:onClick="november"
             android:layout_below="@+id/LimaDelta"
-            app:srcCompat="@drawable/november" />
+            android:layout_alignLeft="@+id/KiloDelta"
+            android:layout_alignStart="@+id/KiloDelta" />
 
         <ImageButton
             android:id="@+id/JulietDelta"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignLeft="@+id/GolfDelta"
-            android:layout_alignStart="@+id/GolfDelta"
-            android:layout_below="@+id/HotelDelta"
-            app:srcCompat="@drawable/juliet" />
+            android:onClick="juliet"
+            app:srcCompat="@drawable/juliet"
+            android:layout_below="@+id/GolfDelta"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
 
         <ImageButton
             android:id="@+id/MikeDelta"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignLeft="@+id/JulietDelta"
-            android:layout_alignStart="@+id/JulietDelta"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
             android:layout_below="@+id/JulietDelta"
+            android:onClick="mike"
             app:srcCompat="@drawable/mike" />
 
         <ImageButton
             android:id="@+id/GolfDelta"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:onClick="golf"
+            app:srcCompat="@drawable/golf"
+            android:layout_below="@+id/DeltaDelta"
             android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true"
-            android:layout_below="@+id/EchoDelta"
-            app:srcCompat="@drawable/golf" />
+            android:layout_alignParentStart="true" />
 
         <ImageButton
             android:id="@+id/SierraDelta"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/PapaDelta"
+            android:onClick="sierra"
             app:srcCompat="@drawable/sierra" />
 
 
@@ -189,16 +204,18 @@
             android:layout_alignLeft="@+id/HotelDelta"
             android:layout_alignStart="@+id/HotelDelta"
             android:layout_below="@+id/IndiaDelta"
+            android:onClick="kilo"
             app:srcCompat="@drawable/kilo" />
 
         <ImageButton
             android:id="@+id/RomeoDelta"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            app:srcCompat="@drawable/romeo"
+            android:onClick="romeo"
             android:layout_below="@+id/OscarDelta"
-            android:layout_toEndOf="@+id/NovemberDelta"
-            android:layout_toRightOf="@+id/NovemberDelta"
-            app:srcCompat="@drawable/romeo" />
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
 
         <ImageButton
             android:id="@+id/PapaDelta"
@@ -213,8 +230,11 @@
             android:id="@+id/VictorDelta"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:onClick="victor"
+            app:srcCompat="@drawable/victor"
             android:layout_below="@+id/SierraDelta"
-            app:srcCompat="@drawable/victor" />
+            android:layout_toLeftOf="@+id/WhiskyDelta"
+            android:layout_toStartOf="@+id/WhiskyDelta" />
 
         <ImageButton
             android:id="@+id/UniformDelta"
@@ -223,6 +243,7 @@
             android:layout_alignParentEnd="true"
             android:layout_alignParentRight="true"
             android:layout_below="@+id/RomeoDelta"
+            android:onClick="uniform"
             app:srcCompat="@drawable/uniform" />
 
         <ImageButton
@@ -231,6 +252,7 @@
             android:layout_height="wrap_content"
             android:layout_alignLeft="@+id/NovemberDelta"
             android:layout_alignStart="@+id/NovemberDelta"
+            android:onClick="quebeck"
             android:layout_below="@+id/OscarDelta"
             app:srcCompat="@drawable/quebec" />
 
@@ -238,28 +260,21 @@
             android:id="@+id/Tangomain"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignLeft="@+id/QuebeckDelta"
-            android:layout_alignStart="@+id/QuebeckDelta"
-            android:layout_below="@+id/PapaDelta"
+            android:layout_below="@+id/QuebeckDelta"
+            android:layout_centerHorizontal="true"
+            android:onClick="tango"
             app:srcCompat="@drawable/tango" />
 
         <ImageButton
-            android:id="@+id/WhiskeyDelta"
+            android:id="@+id/WhiskyDelta"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignLeft="@+id/Tangomain"
-            android:layout_alignParentBottom="true"
-            android:layout_alignStart="@+id/Tangomain"
-            app:srcCompat="@drawable/whisky" />
-
-        <ImageButton
-            android:id="@+id/XrayDelta"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:onClick="whisky"
+            app:srcCompat="@drawable/whisky"
             android:layout_below="@+id/UniformDelta"
-            android:layout_toEndOf="@+id/WhiskeyDelta"
-            android:layout_toRightOf="@+id/WhiskeyDelta"
-            app:srcCompat="@drawable/xray" />
+            android:layout_toLeftOf="@+id/UniformDelta"
+            android:layout_toStartOf="@+id/UniformDelta" />
+
 
         <ImageButton
             android:id="@+id/about"
@@ -272,6 +287,34 @@
             android:onClick="about"
             android:scaleType="fitCenter"
             app:srcCompat="@drawable/info" />
+
+        <ImageButton
+            android:id="@+id/XrayDelta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/xray"
+            android:layout_below="@+id/UniformDelta"
+            android:layout_toRightOf="@+id/WhiskyDelta"
+            android:layout_toEndOf="@+id/WhiskyDelta" />
+
+        <ImageButton
+            android:id="@+id/YankeeDelta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/VictorDelta"
+            android:layout_alignStart="@+id/WhiskyDelta"
+            android:layout_below="@+id/WhiskyDelta"
+            app:srcCompat="@drawable/yankee" />
+
+        <ImageButton
+            android:id="@+id/ZuluDelta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/zulu"
+            android:layout_below="@+id/VictorDelta"
+            android:layout_alignLeft="@+id/Tangomain"
+            android:layout_alignStart="@+id/Tangomain" />
+
 
     </RelativeLayout>
 </ScrollView>

@@ -34,12 +34,12 @@
             android:text="Velkommen til Flageye V0.1 Alpha" />
 
         <ImageButton
-            android:id="@+id/FoxtrotCharlie"
+            android:id="@+id/FoxtrotZulu"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:onClick="foxtrot"
             app:srcCompat="@drawable/foxtrot"
-            android:layout_below="@+id/CharlieCharlie"
+            android:layout_below="@+id/CharlieZulu"
             android:layout_alignParentRight="true"
             android:layout_alignParentEnd="true" />
 
@@ -58,222 +58,223 @@
             android:textSize="18sp" />
 
         <ImageButton
-            android:id="@+id/IndiaCharlie"
+            android:id="@+id/IndiaZulu"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentEnd="true"
             android:layout_alignParentRight="true"
-            android:layout_below="@+id/FoxtrotCharlie"
+            android:layout_below="@+id/FoxtrotZulu"
             android:onClick="india"
             app:srcCompat="@drawable/india" />
 
         <ImageButton
-            android:id="@+id/CharlieCharlie"
+            android:id="@+id/CharlieZulu"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:onClick="charlie"
             app:srcCompat="@drawable/charlie"
-            android:layout_alignTop="@+id/BravoCharlie"
+            android:layout_alignTop="@+id/BravoZulu"
             android:layout_alignParentRight="true"
             android:layout_alignParentEnd="true" />
 
         <ImageButton
-            android:id="@+id/BravoCharlie"
+            android:id="@+id/BravoZulu"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:onClick="bravo"
             app:srcCompat="@drawable/bravo"
-            android:layout_alignTop="@+id/AlphaCharlie"
-            android:layout_toLeftOf="@+id/CharlieCharlie"
-            android:layout_toStartOf="@+id/CharlieCharlie" />
+            android:layout_alignTop="@+id/AlphaZulu"
+            android:layout_toLeftOf="@+id/CharlieZulu"
+            android:layout_toStartOf="@+id/CharlieZulu" />
 
         <ImageButton
-            android:id="@+id/EchoCharlie"
+            android:id="@+id/EchoZulu"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:onClick="echo"
             app:srcCompat="@drawable/echo"
-            android:layout_below="@+id/CharlieCharlie"
-            android:layout_toLeftOf="@+id/FoxtrotCharlie"
-            android:layout_toStartOf="@+id/FoxtrotCharlie" />
+            android:layout_below="@+id/CharlieZulu"
+            android:layout_toLeftOf="@+id/FoxtrotZulu"
+            android:layout_toStartOf="@+id/FoxtrotZulu" />
 
         <ImageButton
-            android:id="@+id/HotelCharlie"
+            android:id="@+id/HotelZulu"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:onClick="hotel"
             app:srcCompat="@drawable/hotel"
-            android:layout_below="@+id/FoxtrotCharlie"
-            android:layout_alignLeft="@+id/EchoCharlie"
-            android:layout_alignStart="@+id/EchoCharlie" />
+            android:layout_below="@+id/FoxtrotZulu"
+            android:layout_alignLeft="@+id/EchoZulu"
+            android:layout_alignStart="@+id/EchoZulu" />
 
         <ImageButton
-            android:id="@+id/DeltaCharlie"
+            android:id="@+id/DeltaZulu"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:onClick="delta"
             app:srcCompat="@drawable/delta"
-            android:layout_below="@+id/AlphaCharlie"
+            android:layout_below="@+id/AlphaZulu"
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true" />
 
         <ImageButton
-            android:id="@+id/AlphaCharlie"
+            android:id="@+id/AlphaZulu"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:onClick="alpha"
             app:srcCompat="@drawable/alpha"
             android:layout_marginTop="10dp"
             android:layout_below="@+id/textView2"
-            android:layout_toLeftOf="@+id/BravoCharlie"
-            android:layout_toStartOf="@+id/BravoCharlie" />
+            android:layout_alignParentLeft="true"
+            android:layout_toLeftOf="@+id/BravoZulu"
+            android:layout_toStartOf="@+id/BravoZulu" />
 
         <ImageButton
-            android:id="@+id/LimaCharlie"
+            android:id="@+id/LimaZulu"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentEnd="true"
             android:layout_alignParentRight="true"
-            android:layout_below="@+id/IndiaCharlie"
+            android:layout_below="@+id/IndiaZulu"
             android:onClick="lima"
             app:srcCompat="@drawable/lima" />
 
         <ImageButton
-            android:id="@+id/OscarCharlie"
+            android:id="@+id/OscarZulu"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentEnd="true"
             android:layout_alignParentRight="true"
             android:onClick="oscar"
-            android:layout_below="@+id/LimaCharlie"
+            android:layout_below="@+id/LimaZulu"
             app:srcCompat="@drawable/oscar" />
 
         <ImageButton
-            android:id="@+id/NovemberCharlie"
+            android:id="@+id/NovemberZulu"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:srcCompat="@drawable/november"
             android:onClick="november"
-            android:layout_below="@+id/LimaCharlie"
-            android:layout_alignLeft="@+id/KiloCharlie"
-            android:layout_alignStart="@+id/KiloCharlie" />
+            android:layout_below="@+id/LimaZulu"
+            android:layout_alignLeft="@+id/KiloZulu"
+            android:layout_alignStart="@+id/KiloZulu" />
 
         <ImageButton
-            android:id="@+id/JulietCharlie"
+            android:id="@+id/JulietZulu"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:onClick="juliet"
             app:srcCompat="@drawable/juliet"
-            android:layout_below="@+id/GolfCharlie"
+            android:layout_below="@+id/GolfZulu"
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true" />
 
         <ImageButton
-            android:id="@+id/MikeCharlie"
+            android:id="@+id/MikeZulu"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true"
-            android:layout_below="@+id/JulietCharlie"
+            android:layout_below="@+id/JulietZulu"
             android:onClick="mike"
             app:srcCompat="@drawable/mike" />
 
         <ImageButton
-            android:id="@+id/GolfCharlie"
+            android:id="@+id/GolfZulu"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:onClick="golf"
             app:srcCompat="@drawable/golf"
-            android:layout_below="@+id/DeltaCharlie"
+            android:layout_below="@+id/DeltaZulu"
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true" />
 
         <ImageButton
-            android:id="@+id/SierraCharlie"
+            android:id="@+id/SierraZulu"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/PapaCharlie"
+            android:layout_below="@+id/PapaZulu"
             android:onClick="sierra"
             app:srcCompat="@drawable/sierra" />
 
 
         <ImageButton
-            android:id="@+id/KiloCharlie"
+            android:id="@+id/KiloZulu"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignLeft="@+id/HotelCharlie"
-            android:layout_alignStart="@+id/HotelCharlie"
-            android:layout_below="@+id/IndiaCharlie"
+            android:layout_alignLeft="@+id/HotelZulu"
+            android:layout_alignStart="@+id/HotelZulu"
+            android:layout_below="@+id/IndiaZulu"
             android:onClick="kilo"
             app:srcCompat="@drawable/kilo" />
 
         <ImageButton
-            android:id="@+id/RomeoCharlie"
+            android:id="@+id/RomeoZulu"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:srcCompat="@drawable/romeo"
             android:onClick="romeo"
-            android:layout_below="@+id/OscarCharlie"
+            android:layout_below="@+id/OscarZulu"
             android:layout_alignParentRight="true"
             android:layout_alignParentEnd="true" />
 
         <ImageButton
-            android:id="@+id/PapaCharlie"
+            android:id="@+id/PapaZulu"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true"
-            android:layout_below="@+id/NovemberCharlie"
+            android:layout_below="@+id/NovemberZulu"
             app:srcCompat="@drawable/papa" />
 
         <ImageButton
-            android:id="@+id/VictorCharlie"
+            android:id="@+id/VictorZulu"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:onClick="victor"
             app:srcCompat="@drawable/victor"
-            android:layout_below="@+id/SierraCharlie"
-            android:layout_toLeftOf="@+id/WhiskyCharlie"
-            android:layout_toStartOf="@+id/WhiskyCharlie" />
+            android:layout_below="@+id/SierraZulu"
+            android:layout_toLeftOf="@+id/WhiskyZulu"
+            android:layout_toStartOf="@+id/WhiskyZulu" />
 
         <ImageButton
-            android:id="@+id/UniformCharlie"
+            android:id="@+id/UniformZulu"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentEnd="true"
             android:layout_alignParentRight="true"
-            android:layout_below="@+id/RomeoCharlie"
+            android:layout_below="@+id/RomeoZulu"
             android:onClick="uniform"
             app:srcCompat="@drawable/uniform" />
 
         <ImageButton
-            android:id="@+id/QuebeckCharlie"
+            android:id="@+id/QuebeckZulu"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignLeft="@+id/NovemberCharlie"
-            android:layout_alignStart="@+id/NovemberCharlie"
+            android:layout_alignLeft="@+id/NovemberZulu"
+            android:layout_alignStart="@+id/NovemberZulu"
             android:onClick="quebeck"
-            android:layout_below="@+id/OscarCharlie"
+            android:layout_below="@+id/OscarZulu"
             app:srcCompat="@drawable/quebec" />
 
         <ImageButton
             android:id="@+id/Tangomain"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/QuebeckCharlie"
+            android:layout_below="@+id/QuebeckZulu"
             android:layout_centerHorizontal="true"
             android:onClick="tango"
             app:srcCompat="@drawable/tango" />
 
         <ImageButton
-            android:id="@+id/WhiskyCharlie"
+            android:id="@+id/WhiskyZulu"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:onClick="whisky"
             app:srcCompat="@drawable/whisky"
-            android:layout_below="@+id/UniformCharlie"
-            android:layout_toLeftOf="@+id/UniformCharlie"
-            android:layout_toStartOf="@+id/UniformCharlie" />
+            android:layout_below="@+id/UniformZulu"
+            android:layout_toLeftOf="@+id/UniformZulu"
+            android:layout_toStartOf="@+id/UniformZulu" />
 
 
         <ImageButton
@@ -289,29 +290,29 @@
             app:srcCompat="@drawable/info" />
 
         <ImageButton
-            android:id="@+id/XrayCharlie"
+            android:id="@+id/XrayZulu"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:srcCompat="@drawable/xray"
-            android:layout_below="@+id/UniformCharlie"
-            android:layout_toRightOf="@+id/WhiskyCharlie"
-            android:layout_toEndOf="@+id/WhiskyCharlie" />
+            android:layout_below="@+id/UniformZulu"
+            android:layout_toRightOf="@+id/WhiskyZulu"
+            android:layout_toEndOf="@+id/WhiskyZulu" />
 
         <ImageButton
-            android:id="@+id/YankeeCharlie"
+            android:id="@+id/YankeeZulu"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignLeft="@+id/VictorCharlie"
-            android:layout_alignStart="@+id/WhiskyCharlie"
-            android:layout_below="@+id/WhiskyCharlie"
+            android:layout_alignLeft="@+id/VictorZulu"
+            android:layout_alignStart="@+id/WhiskyZulu"
+            android:layout_below="@+id/WhiskyZulu"
             app:srcCompat="@drawable/yankee" />
 
         <ImageButton
-            android:id="@+id/ZuluCharlie"
+            android:id="@+id/ZuluZulu"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:srcCompat="@drawable/zulu"
-            android:layout_below="@+id/VictorCharlie"
+            android:layout_below="@+id/VictorZulu"
             android:layout_alignLeft="@+id/Tangomain"
             android:layout_alignStart="@+id/Tangomain" />
 

@@ -2,6 +2,7 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
+    android:layout_alignParentBottom="true"
     android:layout_height="match_parent"
 
 
@@ -21,6 +22,7 @@
         android:paddingLeft="0dp"
         android:paddingRight="0dp"
         android:paddingTop="0dp"
+        android:gravity="center|bottom"
         tools:context="com.example.asger.flageye.KiloActivity">
 
         <TextView
@@ -109,22 +111,22 @@
             android:id="@+id/DeltaNovember"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true"
+            android:onClick="delta"
+            app:srcCompat="@drawable/delta"
             android:layout_below="@+id/AlphaNovember"
-            android:onClick="Delta"
-            app:srcCompat="@drawable/delta" />
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
 
         <ImageButton
             android:id="@+id/AlphaNovember"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="47dp"
             android:onClick="alpha"
             app:srcCompat="@drawable/alpha"
+            android:layout_marginTop="10dp"
             android:layout_below="@+id/textView2"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true" />
+            android:layout_toLeftOf="@+id/BravoNovember"
+            android:layout_toStartOf="@+id/BravoNovember" />
 
         <ImageButton
             android:id="@+id/LimaNovember"
@@ -142,6 +144,7 @@
             android:layout_height="wrap_content"
             android:layout_alignParentEnd="true"
             android:layout_alignParentRight="true"
+            android:onClick="oscar"
             android:layout_below="@+id/LimaNovember"
             app:srcCompat="@drawable/oscar" />
 
@@ -150,9 +153,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:srcCompat="@drawable/november"
+            android:onClick="november"
             android:layout_below="@+id/LimaNovember"
-            android:layout_toLeftOf="@+id/OscarNovember"
-            android:layout_toStartOf="@+id/OscarNovember" />
+            android:layout_alignLeft="@+id/KiloNovember"
+            android:layout_alignStart="@+id/KiloNovember" />
 
         <ImageButton
             android:id="@+id/JulietNovember"
@@ -178,17 +182,18 @@
             android:id="@+id/GolfNovember"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true"
-            android:layout_below="@+id/DeltaNovember"
             android:onClick="golf"
-            app:srcCompat="@drawable/golf" />
+            app:srcCompat="@drawable/golf"
+            android:layout_below="@+id/DeltaNovember"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
 
         <ImageButton
             android:id="@+id/SierraNovember"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/PapaNovember"
+            android:onClick="sierra"
             app:srcCompat="@drawable/sierra" />
 
 
@@ -207,6 +212,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:srcCompat="@drawable/romeo"
+            android:onClick="romeo"
             android:layout_below="@+id/OscarNovember"
             android:layout_alignParentRight="true"
             android:layout_alignParentEnd="true" />
@@ -224,17 +230,21 @@
             android:id="@+id/VictorNovember"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:onClick="victor"
+            app:srcCompat="@drawable/victor"
             android:layout_below="@+id/SierraNovember"
-            app:srcCompat="@drawable/victor" />
+            android:layout_toLeftOf="@+id/WhiskyNovember"
+            android:layout_toStartOf="@+id/WhiskyNovember" />
 
         <ImageButton
             android:id="@+id/UniformNovember"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            app:srcCompat="@drawable/uniform"
-            android:layout_below="@+id/RomeoNovember"
+            android:layout_alignParentEnd="true"
             android:layout_alignParentRight="true"
-            android:layout_alignParentEnd="true" />
+            android:layout_below="@+id/RomeoNovember"
+            android:onClick="uniform"
+            app:srcCompat="@drawable/uniform" />
 
         <ImageButton
             android:id="@+id/QuebeckNovember"
@@ -242,6 +252,7 @@
             android:layout_height="wrap_content"
             android:layout_alignLeft="@+id/NovemberNovember"
             android:layout_alignStart="@+id/NovemberNovember"
+            android:onClick="quebeck"
             android:layout_below="@+id/OscarNovember"
             app:srcCompat="@drawable/quebec" />
 
@@ -249,28 +260,21 @@
             android:id="@+id/Tangomain"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignLeft="@+id/QuebeckNovember"
-            android:layout_alignStart="@+id/QuebeckNovember"
-            android:layout_below="@+id/PapaNovember"
+            android:layout_below="@+id/QuebeckNovember"
+            android:layout_centerHorizontal="true"
+            android:onClick="tango"
             app:srcCompat="@drawable/tango" />
 
         <ImageButton
-            android:id="@+id/WhiskeyNovember"
+            android:id="@+id/WhiskyNovember"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignLeft="@+id/Tangomain"
-            android:layout_alignParentBottom="true"
-            android:layout_alignStart="@+id/Tangomain"
-            app:srcCompat="@drawable/whisky" />
+            android:onClick="whisky"
+            app:srcCompat="@drawable/whisky"
+            android:layout_below="@+id/UniformNovember"
+            android:layout_toLeftOf="@+id/UniformNovember"
+            android:layout_toStartOf="@+id/UniformNovember" />
 
-        <ImageButton
-            android:id="@+id/XrayNovember"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            app:srcCompat="@drawable/xray"
-            android:layout_alignParentBottom="true"
-            android:layout_alignParentRight="true"
-            android:layout_alignParentEnd="true" />
 
         <ImageButton
             android:id="@+id/about"
@@ -283,6 +287,34 @@
             android:onClick="about"
             android:scaleType="fitCenter"
             app:srcCompat="@drawable/info" />
+
+        <ImageButton
+            android:id="@+id/XrayNovember"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/xray"
+            android:layout_below="@+id/UniformNovember"
+            android:layout_toRightOf="@+id/WhiskyNovember"
+            android:layout_toEndOf="@+id/WhiskyNovember" />
+
+        <ImageButton
+            android:id="@+id/YankeeNovember"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/VictorNovember"
+            android:layout_alignStart="@+id/WhiskyNovember"
+            android:layout_below="@+id/WhiskyNovember"
+            app:srcCompat="@drawable/yankee" />
+
+        <ImageButton
+            android:id="@+id/ZuluNovember"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/zulu"
+            android:layout_below="@+id/VictorNovember"
+            android:layout_alignLeft="@+id/Tangomain"
+            android:layout_alignStart="@+id/Tangomain" />
+
 
     </RelativeLayout>
 </ScrollView>
