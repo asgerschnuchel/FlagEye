@@ -362,6 +362,16 @@ android:scrollbars="none">
         android:layout_alignLeft="@+id/WhiskyMain"
         android:layout_alignStart="@+id/WhiskyMain" />
 
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/background_light"
+        app:srcCompat="@drawable/blackflag"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/XrayMain"
+        android:layout_alignStart="@+id/XrayMain" />
+
 
 </RelativeLayout>
 </ScrollView>
