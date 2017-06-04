@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_alignParentBottom="true"
+    android:layout_height="match_parent"
+
+
+    android:layout_marginRight="10dp"
+    android:layout_marginTop="10dp"
+    android:onClick="alpha"
+    android:overScrollMode="never"
+    android:scrollbars="none">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/activity_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="0dp"
+        android:paddingLeft="0dp"
+        android:paddingRight="0dp"
+        android:paddingTop="0dp"
+        android:gravity="center|bottom"
+        tools:context="com.example.asger.flageye.KiloActivity">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:text="Velkommen til Flageye V0.1 Alpha" />
+
+        <ImageButton
+            android:id="@+id/FoxtrotYankee"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="foxtrot"
+            app:srcCompat="@drawable/foxtrot"
+            android:layout_below="@+id/CharlieYankee"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/textView"
+            android:layout_marginTop="44dp"
+            android:text="    Vælg det flag som er øverst på standeren"
+            android:textColor="@android:color/background_dark"
+            android:textSize="18sp" />
+
+        <ImageButton
+            android:id="@+id/IndiaYankee"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/FoxtrotYankee"
+            android:onClick="india"
+            app:srcCompat="@drawable/india" />
+
+        <ImageButton
+            android:id="@+id/CharlieYankee"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="charlie"
+            app:srcCompat="@drawable/charlie"
+            android:layout_alignTop="@+id/BravoYankee"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <ImageButton
+            android:id="@+id/BravoYankee"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="bravo"
+            app:srcCompat="@drawable/bravo"
+            android:layout_alignTop="@+id/AlphaYankee"
+            android:layout_toLeftOf="@+id/CharlieYankee"
+            android:layout_toStartOf="@+id/CharlieYankee" />
+
+        <ImageButton
+            android:id="@+id/EchoYankee"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="echo"
+            app:srcCompat="@drawable/echo"
+            android:layout_below="@+id/CharlieYankee"
+            android:layout_toLeftOf="@+id/FoxtrotYankee"
+            android:layout_toStartOf="@+id/FoxtrotYankee" />
+
+        <ImageButton
+            android:id="@+id/HotelYankee"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="hotel"
+            app:srcCompat="@drawable/hotel"
+            android:layout_below="@+id/FoxtrotYankee"
+            android:layout_alignLeft="@+id/EchoYankee"
+            android:layout_alignStart="@+id/EchoYankee" />
+
+        <ImageButton
+            android:id="@+id/DeltaYankee"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="delta"
+            app:srcCompat="@drawable/delta"
+            android:layout_below="@+id/AlphaYankee"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <ImageButton
+            android:id="@+id/AlphaYankee"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="alpha"
+            app:srcCompat="@drawable/alpha"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/textView2"
+            android:layout_toLeftOf="@+id/BravoYankee"
+            android:layout_toStartOf="@+id/BravoYankee" />
+
+        <ImageButton
+            android:id="@+id/LimaYankee"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/IndiaYankee"
+            android:onClick="lima"
+            app:srcCompat="@drawable/lima" />
+
+        <ImageButton
+            android:id="@+id/OscarYankee"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:onClick="oscar"
+            android:layout_below="@+id/LimaYankee"
+            app:srcCompat="@drawable/oscar" />
+
+        <ImageButton
+            android:id="@+id/NovemberYankee"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/november"
+            android:onClick="november"
+            android:layout_below="@+id/LimaYankee"
+            android:layout_alignLeft="@+id/KiloYankee"
+            android:layout_alignStart="@+id/KiloYankee" />
+
+        <ImageButton
+            android:id="@+id/JulietYankee"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="juliet"
+            app:srcCompat="@drawable/juliet"
+            android:layout_below="@+id/GolfYankee"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <ImageButton
+            android:id="@+id/MikeYankee"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/JulietYankee"
+            android:onClick="mike"
+            app:srcCompat="@drawable/mike" />
+
+        <ImageButton
+            android:id="@+id/GolfYankee"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="golf"
+            app:srcCompat="@drawable/golf"
+            android:layout_below="@+id/DeltaYankee"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <ImageButton
+            android:id="@+id/SierraYankee"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/PapaYankee"
+            android:onClick="sierra"
+            app:srcCompat="@drawable/sierra" />
+
+
+        <ImageButton
+            android:id="@+id/KiloYankee"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/HotelYankee"
+            android:layout_alignStart="@+id/HotelYankee"
+            android:layout_below="@+id/IndiaYankee"
+            android:onClick="kilo"
+            app:srcCompat="@drawable/kilo" />
+
+        <ImageButton
+            android:id="@+id/RomeoYankee"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/romeo"
+            android:onClick="romeo"
+            android:layout_below="@+id/OscarYankee"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <ImageButton
+            android:id="@+id/PapaYankee"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/NovemberYankee"
+            app:srcCompat="@drawable/papa" />
+
+        <ImageButton
+            android:id="@+id/VictorYankee"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="victor"
+            app:srcCompat="@drawable/victor"
+            android:layout_below="@+id/SierraYankee"
+            android:layout_toLeftOf="@+id/WhiskyYankee"
+            android:layout_toStartOf="@+id/WhiskyYankee" />
+
+        <ImageButton
+            android:id="@+id/UniformYankee"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/RomeoYankee"
+            android:onClick="uniform"
+            app:srcCompat="@drawable/uniform" />
+
+        <ImageButton
+            android:id="@+id/QuebeckYankee"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/NovemberYankee"
+            android:layout_alignStart="@+id/NovemberYankee"
+            android:onClick="quebeck"
+            android:layout_below="@+id/OscarYankee"
+            app:srcCompat="@drawable/quebec" />
+
+        <ImageButton
+            android:id="@+id/Tangomain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/QuebeckYankee"
+            android:layout_centerHorizontal="true"
+            android:onClick="tango"
+            app:srcCompat="@drawable/tango" />
+
+        <ImageButton
+            android:id="@+id/WhiskyYankee"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="whisky"
+            app:srcCompat="@drawable/whisky"
+            android:layout_below="@+id/UniformYankee"
+            android:layout_toLeftOf="@+id/UniformYankee"
+            android:layout_toStartOf="@+id/UniformYankee" />
+
+
+        <ImageButton
+            android:id="@+id/about"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:background="@android:color/background_light"
+            android:onClick="about"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/info" />
+
+        <ImageButton
+            android:id="@+id/XrayYankee"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/xray"
+            android:layout_below="@+id/UniformYankee"
+            android:layout_toRightOf="@+id/WhiskyYankee"
+            android:layout_toEndOf="@+id/WhiskyYankee" />
+
+        <ImageButton
+            android:id="@+id/YankeeYankee"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/VictorYankee"
+            android:layout_alignStart="@+id/WhiskyYankee"
+            android:layout_below="@+id/WhiskyYankee"
+            app:srcCompat="@drawable/yankee" />
+
+        <ImageButton
+            android:id="@+id/ZuluYankee"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/zulu"
+            android:layout_below="@+id/VictorYankee"
+            android:layout_alignLeft="@+id/Tangomain"
+            android:layout_alignStart="@+id/Tangomain" />
+
+
+    </RelativeLayout>
+</ScrollView>

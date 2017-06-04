@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "/home/asger/FlagEye/app/build/intermediates/res/merged/debug/drawable-ldrtl-xxhdpi-v17/abc_spinner_mtrl_am_alpha.9.png",
+        "source": "/home/asger/.android/build-cache/fdc37dad3693a4510aceda2927c9ee1dc9af5400/output/res/drawable-ldrtl-xxhdpi-v17/abc_spinner_mtrl_am_alpha.9.png"
+    },
+    {
+        "merged": "/home/asger/FlagEye/app/build/intermediates/res/merged/debug/drawable-ldrtl-xxhdpi-v17/abc_ic_menu_cut_mtrl_alpha.png",
+        "source": "/home/asger/.android/build-cache/fdc37dad3693a4510aceda2927c9ee1dc9af5400/output/res/drawable-ldrtl-xxhdpi-v17/abc_ic_menu_cut_mtrl_alpha.png"
+    },
+    {
+        "merged": "/home/asger/FlagEye/app/build/intermediates/res/merged/debug/drawable-ldrtl-xxhdpi-v17/abc_ic_menu_copy_mtrl_am_alpha.png",
+        "source": "/home/asger/.android/build-cache/fdc37dad3693a4510aceda2927c9ee1dc9af5400/output/res/drawable-ldrtl-xxhdpi-v17/abc_ic_menu_copy_mtrl_am_alpha.png"
+    }
+]

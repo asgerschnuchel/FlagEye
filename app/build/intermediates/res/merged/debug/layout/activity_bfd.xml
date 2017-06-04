@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/BFD_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="layout.bfg.BFD">
+
+    <TextView
+        android:id="@+id/textView24"
+        android:layout_width="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_height="wrap_content"
+        android:layout_column="1"
+        android:layout_row="1"
+        android:layout_weight="1"
+        android:text="Regel 30.3 gælder under startproceduren."
+        android:textColor="@android:color/black"
+        android:textSize="16sp"
+        tools:layout_editor_absoluteX="44dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/textView27" />
+
+    <TextView
+        android:id="@+id/textView25"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_column="1"
+        android:layout_row="2"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_weight="1"
+        android:text="30.3"
+        android:textSize="12sp"
+        tools:layout_editor_absoluteX="181dp"
+        android:layout_marginTop="0dp"
+        app:layout_constraintTop_toBottomOf="@+id/textView24" />
+
+    <TextView
+        android:id="@+id/textView26"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Sort flag"
+        android:textSize="20sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+
+    <TextView
+        android:id="@+id/textView27"
+        android:layout_width="190dp"
+        android:layout_height="24dp"
+        android:layout_weight="1"
+        android:text="Under startprocedure"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
+        tools:layout_editor_absoluteX="97dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/textView26" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_weight="1"
+        app:srcCompat="@drawable/blackflag"
+        tools:layout_editor_absoluteX="142dp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="8dp" />
+
+    <TextView
+        android:id="@+id/textView28"
+        android:layout_width="361dp"
+        android:layout_height="279dp"
+        android:layout_column="1"
+        android:layout_marginTop="8dp"
+        android:layout_row="14"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_weight="1"
+        android:text="Hvis et sort flag har været vist, må ingen del af en båds skrog, besætning eller udstyr i det sidste minut før dens startsignal være inden for den trekant, der dannes af begge ender af startlinjen og det første mærke. Hvis den ikke overholder dette og identificeres, vil den blive diskvalificeret uden høring, selv om kapsejladsen omstartes eller sejles om, men ikke hvis kapsejladsen udsættes eller opgives før startsignalet. Hvis der signaleres generel tilbagekaldelse eller kapsejladsen opgives efter startsignalet, skal kapsejladskomitéen vise bådens sejlnummer inden det næste varselssignal for den kapsejlads, og hvis kapsejladsen omstartes eller sejles om, må båden ikke deltage i den. Hvis den gør det, må dens diskvalifikation ikke blive fratrukket i beregningen af dens pointsum for serien. "
+        android:textColor="@android:color/black"
+        android:textSize="14dp"
+        app:layout_constraintTop_toBottomOf="@+id/textView25"
+        tools:layout_editor_absoluteX="12dp" />
+</android.support.constraint.ConstraintLayout>

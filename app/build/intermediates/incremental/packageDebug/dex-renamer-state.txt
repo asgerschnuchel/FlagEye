@@ -1,0 +1,7 @@
+#Sun Jun 04 11:50:46 CEST 2017
+base.0=/home/asger/FlagEye/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_a48941f5ee2e475111ff92d11f237d2041a70ac5
+renamed.1=classes.dex
+renamed.0=classes2.dex
+file.1=/home/asger/FlagEye/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_8e7009c8a8f8192f5b2a60655bdccfa6402654bb/classes.dex
+base.1=/home/asger/FlagEye/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_8e7009c8a8f8192f5b2a60655bdccfa6402654bb
+file.0=/home/asger/FlagEye/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_a48941f5ee2e475111ff92d11f237d2041a70ac5/classes.dex

@@ -31,10 +31,9 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.asger.flageye.MainActivity" />
         </activity>
-
-        <activity android:name="layout.unknown.Unknown"
+        <activity
+            android:name="layout.unknown.Unknown"
             android:parentActivityName=".MainActivity" />
-
         <activity android:name="layout.bravo.Bravo" />
         <activity android:name="layout.charlie.Charlie" />
         <activity android:name="layout.delta.Delta" />
@@ -60,7 +59,7 @@
         <activity android:name="layout.xray.Xray" />
         <activity android:name="layout.yankee.Yankee" />
         <activity android:name="layout.zulu.Zulu" />
-
+        <activity android:name="layout.bfg.BFD"></activity>
     </application>
 
 </manifest>

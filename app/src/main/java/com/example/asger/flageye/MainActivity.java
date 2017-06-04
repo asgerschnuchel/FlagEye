@@ -9,6 +9,7 @@ import com.android.About;
 import com.example.asger.flageye.test.Alpha;
 
 
+import layout.bfg.BFD;
 import layout.bravo.Bravo;
 import layout.charlie.Charlie;
 import layout.delta.Delta;
@@ -33,6 +34,7 @@ import layout.victor.Victor;
 import layout.whisky.Whisky;
 import layout.xray.Xray;
 import layout.yankee.Yankee;
+import layout.zulu.Zulu;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -146,5 +148,14 @@ public class MainActivity extends AppCompatActivity {
         Intent a = new Intent(getBaseContext(), Yankee.class);
         startActivity(a);
     }
+    public void zulu(View view) {
+        Intent a = new Intent(getBaseContext(), Zulu.class);
+        startActivity(a);
+    }
+    public void bfg(View view) {
+        Intent a = new Intent(getBaseContext(), BFD.class);
+        startActivity(a);
+    }
+
 }
 

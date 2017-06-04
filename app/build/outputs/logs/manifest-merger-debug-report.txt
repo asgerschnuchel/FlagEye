@@ -1,0 +1,212 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /home/asger/FlagEye/app/src/main/AndroidManifest.xml:2:1-65:12
+	package
+		ADDED from /home/asger/FlagEye/app/src/main/AndroidManifest.xml:3:5-40
+		INJECTED from /home/asger/FlagEye/app/src/main/AndroidManifest.xml
+		INJECTED from /home/asger/FlagEye/app/src/main/AndroidManifest.xml
+	android:versionName
+		INJECTED from /home/asger/FlagEye/app/src/main/AndroidManifest.xml
+		INJECTED from /home/asger/FlagEye/app/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /home/asger/FlagEye/app/src/main/AndroidManifest.xml:2:11-69
+	android:versionCode
+		INJECTED from /home/asger/FlagEye/app/src/main/AndroidManifest.xml
+		INJECTED from /home/asger/FlagEye/app/src/main/AndroidManifest.xml
+application
+ADDED from /home/asger/FlagEye/app/src/main/AndroidManifest.xml:5:5-63:19
+MERGED from [com.android.support:design:24.2.1] /home/asger/.android/build-cache/106991f8102a30c439d76e45af2ac833574e53c3/output/AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:appcompat-v7:24.2.1] /home/asger/.android/build-cache/fdc37dad3693a4510aceda2927c9ee1dc9af5400/output/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-v4:24.2.1] /home/asger/.android/build-cache/32269bf536c5b40b232f45e1d8be983c3391c08d/output/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-fragment:24.2.1] /home/asger/.android/build-cache/ee8b59dc5ee06f1847f2ecd2ffc5affc863b19fa/output/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-media-compat:24.2.1] /home/asger/.android/build-cache/d2f383cd919812eddf3cd49d845fe44d0da51bce/output/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-core-utils:24.2.1] /home/asger/.android/build-cache/ae6eeb5cb20d1f895e361ef7fee2a53a3586a336/output/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:animated-vector-drawable:24.2.1] /home/asger/.android/build-cache/7aca5319ebf5bc5c12f3012e78e3a49b97d64cc4/output/AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-vector-drawable:24.2.1] /home/asger/.android/build-cache/9a1fee98cd0fb3728abd714f5e2b89fce122173e/output/AndroidManifest.xml:23:5-20
+MERGED from [com.android.support:support-core-ui:24.2.1] /home/asger/.android/build-cache/1c2e26622430e1ea3ac017f1936f6b09ec90594a/output/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-compat:24.2.1] /home/asger/.android/build-cache/c947e2f14c35a20afc7154e174db27133e65eb2d/output/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /home/asger/.android/build-cache/a9920736cbd510c717b1731bfee0e4207d34a37b/output/AndroidManifest.xml:9:5-20
+	android:label
+		ADDED from /home/asger/FlagEye/app/src/main/AndroidManifest.xml:8:9-32
+	android:allowBackup
+		ADDED from /home/asger/FlagEye/app/src/main/AndroidManifest.xml:6:9-35
+	android:icon
+		ADDED from /home/asger/FlagEye/app/src/main/AndroidManifest.xml:7:9-39
+	android:theme
+		ADDED from /home/asger/FlagEye/app/src/main/AndroidManifest.xml:9:9-70
+activity#com.example.asger.flageye.MainActivity
+ADDED from /home/asger/FlagEye/app/src/main/AndroidManifest.xml:10:9-19:20
+	android:label
+		ADDED from /home/asger/FlagEye/app/src/main/AndroidManifest.xml:12:13-45
+	android:theme
+		ADDED from /home/asger/FlagEye/app/src/main/AndroidManifest.xml:13:13-44
+	android:name
+		ADDED from /home/asger/FlagEye/app/src/main/AndroidManifest.xml:11:13-41
+intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
+ADDED from /home/asger/FlagEye/app/src/main/AndroidManifest.xml:14:13-18:29
+action#android.intent.action.MAIN
+ADDED from /home/asger/FlagEye/app/src/main/AndroidManifest.xml:15:17-69
+	android:name
+		ADDED from /home/asger/FlagEye/app/src/main/AndroidManifest.xml:15:25-66
+category#android.intent.category.LAUNCHER
+ADDED from /home/asger/FlagEye/app/src/main/AndroidManifest.xml:17:17-77
+	android:name
+		ADDED from /home/asger/FlagEye/app/src/main/AndroidManifest.xml:17:27-74
+activity#com.example.asger.flageye.test.Alpha
+ADDED from /home/asger/FlagEye/app/src/main/AndroidManifest.xml:20:9-24:47
+	android:label
+		ADDED from /home/asger/FlagEye/app/src/main/AndroidManifest.xml:22:13-64
+	android:parentActivityName
+		ADDED from /home/asger/FlagEye/app/src/main/AndroidManifest.xml:23:13-55
+	android:theme
+		ADDED from /home/asger/FlagEye/app/src/main/AndroidManifest.xml:24:13-44
+	android:name
+		ADDED from /home/asger/FlagEye/app/src/main/AndroidManifest.xml:21:13-39
+activity#com.android.About
+ADDED from /home/asger/FlagEye/app/src/main/AndroidManifest.xml:25:9-33:20
+	android:label
+		ADDED from /home/asger/FlagEye/app/src/main/AndroidManifest.xml:27:13-57
+	android:parentActivityName
+		ADDED from /home/asger/FlagEye/app/src/main/AndroidManifest.xml:28:13-55
+	android:theme
+		ADDED from /home/asger/FlagEye/app/src/main/AndroidManifest.xml:29:13-47
+	android:name
+		ADDED from /home/asger/FlagEye/app/src/main/AndroidManifest.xml:26:13-45
+meta-data#android.support.PARENT_ACTIVITY
+ADDED from /home/asger/FlagEye/app/src/main/AndroidManifest.xml:30:13-32:74
+	android:value
+		ADDED from /home/asger/FlagEye/app/src/main/AndroidManifest.xml:32:17-71
+	android:name
+		ADDED from /home/asger/FlagEye/app/src/main/AndroidManifest.xml:31:17-63
+activity#layout.unknown.Unknown
+ADDED from /home/asger/FlagEye/app/src/main/AndroidManifest.xml:34:9-36:58
+	android:parentActivityName
+		ADDED from /home/asger/FlagEye/app/src/main/AndroidManifest.xml:36:13-55
+	android:name
+		ADDED from /home/asger/FlagEye/app/src/main/AndroidManifest.xml:35:13-50
+activity#layout.bravo.Bravo
+ADDED from /home/asger/FlagEye/app/src/main/AndroidManifest.xml:37:9-55
+	android:name
+		ADDED from /home/asger/FlagEye/app/src/main/AndroidManifest.xml:37:19-52
+activity#layout.charlie.Charlie
+ADDED from /home/asger/FlagEye/app/src/main/AndroidManifest.xml:38:9-59
+	android:name
+		ADDED from /home/asger/FlagEye/app/src/main/AndroidManifest.xml:38:19-56
+activity#layout.delta.Delta
+ADDED from /home/asger/FlagEye/app/src/main/AndroidManifest.xml:39:9-55
+	android:name
+		ADDED from /home/asger/FlagEye/app/src/main/AndroidManifest.xml:39:19-52
+activity#layout.echo.Echo
+ADDED from /home/asger/FlagEye/app/src/main/AndroidManifest.xml:40:9-53
+	android:name
+		ADDED from /home/asger/FlagEye/app/src/main/AndroidManifest.xml:40:19-50
+activity#layout.foxtrot.Foxtrot
+ADDED from /home/asger/FlagEye/app/src/main/AndroidManifest.xml:41:9-59
+	android:name
+		ADDED from /home/asger/FlagEye/app/src/main/AndroidManifest.xml:41:19-56
+activity#layout.golf.Golf
+ADDED from /home/asger/FlagEye/app/src/main/AndroidManifest.xml:42:9-53
+	android:name
+		ADDED from /home/asger/FlagEye/app/src/main/AndroidManifest.xml:42:19-50
+activity#layout.hotel.Hotel
+ADDED from /home/asger/FlagEye/app/src/main/AndroidManifest.xml:43:9-55
+	android:name
+		ADDED from /home/asger/FlagEye/app/src/main/AndroidManifest.xml:43:19-52
+activity#layout.india.India
+ADDED from /home/asger/FlagEye/app/src/main/AndroidManifest.xml:44:9-55
+	android:name
+		ADDED from /home/asger/FlagEye/app/src/main/AndroidManifest.xml:44:19-52
+activity#layout.juliet.Juliet
+ADDED from /home/asger/FlagEye/app/src/main/AndroidManifest.xml:45:9-57
+	android:name
+		ADDED from /home/asger/FlagEye/app/src/main/AndroidManifest.xml:45:19-54
+activity#layout.kilo.Kilo
+ADDED from /home/asger/FlagEye/app/src/main/AndroidManifest.xml:46:9-53
+	android:name
+		ADDED from /home/asger/FlagEye/app/src/main/AndroidManifest.xml:46:19-50
+activity#layout.lima.Lima
+ADDED from /home/asger/FlagEye/app/src/main/AndroidManifest.xml:47:9-53
+	android:name
+		ADDED from /home/asger/FlagEye/app/src/main/AndroidManifest.xml:47:19-50
+activity#layout.mike.Mike
+ADDED from /home/asger/FlagEye/app/src/main/AndroidManifest.xml:48:9-53
+	android:name
+		ADDED from /home/asger/FlagEye/app/src/main/AndroidManifest.xml:48:19-50
+activity#layout.november.November
+ADDED from /home/asger/FlagEye/app/src/main/AndroidManifest.xml:49:9-61
+	android:name
+		ADDED from /home/asger/FlagEye/app/src/main/AndroidManifest.xml:49:19-58
+activity#layout.oscar.Oscar
+ADDED from /home/asger/FlagEye/app/src/main/AndroidManifest.xml:50:9-55
+	android:name
+		ADDED from /home/asger/FlagEye/app/src/main/AndroidManifest.xml:50:19-52
+activity#layout.papa.Papa
+ADDED from /home/asger/FlagEye/app/src/main/AndroidManifest.xml:51:9-53
+	android:name
+		ADDED from /home/asger/FlagEye/app/src/main/AndroidManifest.xml:51:19-50
+activity#layout.quebeck.Quebeck
+ADDED from /home/asger/FlagEye/app/src/main/AndroidManifest.xml:52:9-59
+	android:name
+		ADDED from /home/asger/FlagEye/app/src/main/AndroidManifest.xml:52:19-56
+activity#layout.romeo.Romeo
+ADDED from /home/asger/FlagEye/app/src/main/AndroidManifest.xml:53:9-55
+	android:name
+		ADDED from /home/asger/FlagEye/app/src/main/AndroidManifest.xml:53:19-52
+activity#layout.sierra.Sierra
+ADDED from /home/asger/FlagEye/app/src/main/AndroidManifest.xml:54:9-57
+	android:name
+		ADDED from /home/asger/FlagEye/app/src/main/AndroidManifest.xml:54:19-54
+activity#layout.tango.Tango
+ADDED from /home/asger/FlagEye/app/src/main/AndroidManifest.xml:55:9-55
+	android:name
+		ADDED from /home/asger/FlagEye/app/src/main/AndroidManifest.xml:55:19-52
+activity#layout.uniform.Uniform
+ADDED from /home/asger/FlagEye/app/src/main/AndroidManifest.xml:56:9-59
+	android:name
+		ADDED from /home/asger/FlagEye/app/src/main/AndroidManifest.xml:56:19-56
+activity#layout.victor.Victor
+ADDED from /home/asger/FlagEye/app/src/main/AndroidManifest.xml:57:9-57
+	android:name
+		ADDED from /home/asger/FlagEye/app/src/main/AndroidManifest.xml:57:19-54
+activity#layout.whisky.Whisky
+ADDED from /home/asger/FlagEye/app/src/main/AndroidManifest.xml:58:9-57
+	android:name
+		ADDED from /home/asger/FlagEye/app/src/main/AndroidManifest.xml:58:19-54
+activity#layout.xray.Xray
+ADDED from /home/asger/FlagEye/app/src/main/AndroidManifest.xml:59:9-53
+	android:name
+		ADDED from /home/asger/FlagEye/app/src/main/AndroidManifest.xml:59:19-50
+activity#layout.yankee.Yankee
+ADDED from /home/asger/FlagEye/app/src/main/AndroidManifest.xml:60:9-57
+	android:name
+		ADDED from /home/asger/FlagEye/app/src/main/AndroidManifest.xml:60:19-54
+activity#layout.zulu.Zulu
+ADDED from /home/asger/FlagEye/app/src/main/AndroidManifest.xml:61:9-53
+	android:name
+		ADDED from /home/asger/FlagEye/app/src/main/AndroidManifest.xml:61:19-50
+activity#layout.bfg.BFD
+ADDED from /home/asger/FlagEye/app/src/main/AndroidManifest.xml:62:9-60
+	android:name
+		ADDED from /home/asger/FlagEye/app/src/main/AndroidManifest.xml:62:19-48
+uses-sdk
+INJECTED from /home/asger/FlagEye/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+MERGED from [com.android.support:design:24.2.1] /home/asger/.android/build-cache/106991f8102a30c439d76e45af2ac833574e53c3/output/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:appcompat-v7:24.2.1] /home/asger/.android/build-cache/fdc37dad3693a4510aceda2927c9ee1dc9af5400/output/AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:support-v4:24.2.1] /home/asger/.android/build-cache/32269bf536c5b40b232f45e1d8be983c3391c08d/output/AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-fragment:24.2.1] /home/asger/.android/build-cache/ee8b59dc5ee06f1847f2ecd2ffc5affc863b19fa/output/AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-media-compat:24.2.1] /home/asger/.android/build-cache/d2f383cd919812eddf3cd49d845fe44d0da51bce/output/AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-core-utils:24.2.1] /home/asger/.android/build-cache/ae6eeb5cb20d1f895e361ef7fee2a53a3586a336/output/AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:animated-vector-drawable:24.2.1] /home/asger/.android/build-cache/7aca5319ebf5bc5c12f3012e78e3a49b97d64cc4/output/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:24.2.1] /home/asger/.android/build-cache/9a1fee98cd0fb3728abd714f5e2b89fce122173e/output/AndroidManifest.xml:21:5-43
+MERGED from [com.android.support:recyclerview-v7:24.2.1] /home/asger/.android/build-cache/2358340713f18fb8c354b2ac0c2701f1a4afbedd/output/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-core-ui:24.2.1] /home/asger/.android/build-cache/1c2e26622430e1ea3ac017f1936f6b09ec90594a/output/AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-compat:24.2.1] /home/asger/.android/build-cache/c947e2f14c35a20afc7154e174db27133e65eb2d/output/AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /home/asger/.android/build-cache/a9920736cbd510c717b1731bfee0e4207d34a37b/output/AndroidManifest.xml:5:5-7:41
+	tools:overrideLibrary
+		ADDED from [com.android.support:appcompat-v7:24.2.1] /home/asger/.android/build-cache/fdc37dad3693a4510aceda2927c9ee1dc9af5400/output/AndroidManifest.xml:23:9-75
+	android:targetSdkVersion
+		INJECTED from /home/asger/FlagEye/app/src/main/AndroidManifest.xml
+		INJECTED from /home/asger/FlagEye/app/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /home/asger/FlagEye/app/src/main/AndroidManifest.xml
+		INJECTED from /home/asger/FlagEye/app/src/main/AndroidManifest.xml

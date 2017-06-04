@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.android.About">
+
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteY="8dp"
+        tools:layout_editor_absoluteX="8dp">
+
+        <TextView
+            android:id="@+id/textView16"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:text="Kontakt: asgerschnuchel@gmail.com"
+            app:layout_constraintLeft_toLeftOf="@+id/textView13"
+            tools:layout_constraintLeft_creator="1"
+            tools:layout_conversion_absoluteHeight="0dp"
+            tools:layout_conversion_absoluteWidth="0dp"
+            tools:layout_conversion_absoluteX="51dp"
+            tools:layout_conversion_absoluteY="610dp"
+            tools:layout_editor_absoluteY="610dp" />
+
+        <TextView
+            android:id="@+id/Idé"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Idé"
+            android:textColor="@android:color/black"
+            android:textSize="25sp"
+            app:layout_constraintBottom_toBottomOf="@+id/textView13"
+            app:layout_constraintLeft_toLeftOf="@+id/textView13"
+            app:layout_constraintTop_toBottomOf="@+id/textView13"
+            app:layout_constraintVertical_bias="0.0"
+            tools:layout_constraintBottom_creator="1"
+            tools:layout_constraintLeft_creator="1"
+            tools:layout_constraintTop_creator="1"
+            tools:layout_conversion_absoluteHeight="89dp"
+            tools:layout_conversion_absoluteWidth="0dp"
+            tools:layout_conversion_absoluteX="139dp"
+            tools:layout_conversion_absoluteY="521dp" />
+
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:text="Programmering og Test"
+            android:textColor="@android:color/black"
+            android:textSize="25sp"
+            app:layout_constraintLeft_toLeftOf="@+id/textView13"
+            app:layout_constraintTop_toBottomOf="@+id/textView13"
+            tools:layout_constraintLeft_creator="1"
+            tools:layout_constraintTop_creator="1"
+            tools:layout_conversion_absoluteHeight="0dp"
+            tools:layout_conversion_absoluteWidth="18dp"
+            tools:layout_conversion_absoluteX="19dp"
+            tools:layout_conversion_absoluteY="428dp" />
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Bo Jarvig"
+            app:layout_constraintLeft_toLeftOf="parent"
+            tools:layout_constraintLeft_creator="1"
+            tools:layout_conversion_absoluteHeight="132dp"
+            tools:layout_conversion_absoluteWidth="0dp"
+            tools:layout_conversion_absoluteX="54dp"
+            tools:layout_conversion_absoluteY="8dp"
+            tools:layout_editor_absoluteY="8dp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="395dp"
+        android:layout_height="wrap_content"
+        android:text="Asger Schnuchel"
+        app:layout_constraintLeft_toLeftOf="@+id/textView13"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_conversion_absoluteHeight="82dp"
+        tools:layout_conversion_absoluteWidth="30dp"
+        tools:layout_conversion_absoluteX="8dp"
+        tools:layout_conversion_absoluteY="428dp"
+        tools:layout_editor_absoluteY="321dp"
+        android:layout_marginLeft="182dp" />
+
+
+</android.support.constraint.ConstraintLayout>

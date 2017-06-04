@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "/home/asger/FlagEye/app/build/intermediates/res/merged/debug/anim-v21/design_bottom_sheet_slide_out.xml",
+        "source": "/home/asger/.android/build-cache/106991f8102a30c439d76e45af2ac833574e53c3/output/res/anim-v21/design_bottom_sheet_slide_out.xml"
+    },
+    {
+        "merged": "/home/asger/FlagEye/app/build/intermediates/res/merged/debug/anim-v21/design_bottom_sheet_slide_in.xml",
+        "source": "/home/asger/.android/build-cache/106991f8102a30c439d76e45af2ac833574e53c3/output/res/anim-v21/design_bottom_sheet_slide_in.xml"
+    },
+    {
+        "merged": "/home/asger/FlagEye/app/build/intermediates/res/merged/debug/anim-v21/design_appbar_state_list_animator.xml",
+        "source": "/home/asger/.android/build-cache/106991f8102a30c439d76e45af2ac833574e53c3/output/res/anim-v21/design_appbar_state_list_animator.xml"
+    }
+]

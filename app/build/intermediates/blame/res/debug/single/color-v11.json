@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "/home/asger/FlagEye/app/build/intermediates/res/merged/debug/color-v11/abc_background_cache_hint_selector_material_light.xml",
+        "source": "/home/asger/.android/build-cache/fdc37dad3693a4510aceda2927c9ee1dc9af5400/output/res/color-v11/abc_background_cache_hint_selector_material_light.xml"
+    },
+    {
+        "merged": "/home/asger/FlagEye/app/build/intermediates/res/merged/debug/color-v11/abc_background_cache_hint_selector_material_dark.xml",
+        "source": "/home/asger/.android/build-cache/fdc37dad3693a4510aceda2927c9ee1dc9af5400/output/res/color-v11/abc_background_cache_hint_selector_material_dark.xml"
+    }
+]

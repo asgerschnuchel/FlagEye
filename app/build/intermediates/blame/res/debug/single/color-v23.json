@@ -1,0 +1,42 @@
+[
+    {
+        "merged": "/home/asger/FlagEye/app/build/intermediates/res/merged/debug/color-v23/abc_tint_switch_track.xml",
+        "source": "/home/asger/.android/build-cache/fdc37dad3693a4510aceda2927c9ee1dc9af5400/output/res/color-v23/abc_tint_switch_track.xml"
+    },
+    {
+        "merged": "/home/asger/FlagEye/app/build/intermediates/res/merged/debug/color-v23/abc_tint_switch_thumb.xml",
+        "source": "/home/asger/.android/build-cache/fdc37dad3693a4510aceda2927c9ee1dc9af5400/output/res/color-v23/abc_tint_switch_thumb.xml"
+    },
+    {
+        "merged": "/home/asger/FlagEye/app/build/intermediates/res/merged/debug/color-v23/abc_btn_colored_borderless_text_material.xml",
+        "source": "/home/asger/.android/build-cache/fdc37dad3693a4510aceda2927c9ee1dc9af5400/output/res/color-v23/abc_btn_colored_borderless_text_material.xml"
+    },
+    {
+        "merged": "/home/asger/FlagEye/app/build/intermediates/res/merged/debug/color-v23/abc_tint_seek_thumb.xml",
+        "source": "/home/asger/.android/build-cache/fdc37dad3693a4510aceda2927c9ee1dc9af5400/output/res/color-v23/abc_tint_seek_thumb.xml"
+    },
+    {
+        "merged": "/home/asger/FlagEye/app/build/intermediates/res/merged/debug/color-v23/abc_tint_spinner.xml",
+        "source": "/home/asger/.android/build-cache/fdc37dad3693a4510aceda2927c9ee1dc9af5400/output/res/color-v23/abc_tint_spinner.xml"
+    },
+    {
+        "merged": "/home/asger/FlagEye/app/build/intermediates/res/merged/debug/color-v23/abc_tint_edittext.xml",
+        "source": "/home/asger/.android/build-cache/fdc37dad3693a4510aceda2927c9ee1dc9af5400/output/res/color-v23/abc_tint_edittext.xml"
+    },
+    {
+        "merged": "/home/asger/FlagEye/app/build/intermediates/res/merged/debug/color-v23/abc_tint_default.xml",
+        "source": "/home/asger/.android/build-cache/fdc37dad3693a4510aceda2927c9ee1dc9af5400/output/res/color-v23/abc_tint_default.xml"
+    },
+    {
+        "merged": "/home/asger/FlagEye/app/build/intermediates/res/merged/debug/color-v23/abc_color_highlight_material.xml",
+        "source": "/home/asger/.android/build-cache/fdc37dad3693a4510aceda2927c9ee1dc9af5400/output/res/color-v23/abc_color_highlight_material.xml"
+    },
+    {
+        "merged": "/home/asger/FlagEye/app/build/intermediates/res/merged/debug/color-v23/abc_tint_btn_checkable.xml",
+        "source": "/home/asger/.android/build-cache/fdc37dad3693a4510aceda2927c9ee1dc9af5400/output/res/color-v23/abc_tint_btn_checkable.xml"
+    },
+    {
+        "merged": "/home/asger/FlagEye/app/build/intermediates/res/merged/debug/color-v23/design_tint_password_toggle.xml",
+        "source": "/home/asger/.android/build-cache/106991f8102a30c439d76e45af2ac833574e53c3/output/res/color-v23/design_tint_password_toggle.xml"
+    }
+]
